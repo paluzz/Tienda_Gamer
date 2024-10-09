@@ -1,4 +1,4 @@
-# Tienda Online de Componentes Electrónicos
+# Tienda Online de Tecnologia
 
 Bienvenido a nuestra tienda online de tecnologia. Aquí encontrarás una amplia variedad de productos para tus entretenimiento, desde notebooks y pc de escritorio hasta periféricos y juegos digitales.
 
