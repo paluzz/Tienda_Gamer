@@ -6,7 +6,26 @@ Naranja: ee8d48
 Verde:   bfe760  
 */
 
-.promo {
+/* Ver como hacer un slider
+.slider {
+    aspect-ratio: 10/16;
+    width: 300px;
+    position: relative;
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+}
+.slider img {
+    width: 100%;
+    left: 0;
+    position: sticky;
+    object-fit: cover;
+    border-radius: 5px;
+    scroll-snap-align: center;
+}
+*/
+
+header .promo {
     background-color: black;
     color: white;
 }
@@ -27,22 +46,7 @@ ul {
     text-decoration: none;
 }
 
-/* Ver slider
 .slider {
-    /* aspect-ratio: 10/16;*/
-/* width: 300px;
-    position: relative;
-    display: flex;
-    overflow: scroll;
-    scroll-snap-type: x mandatory;
+    max-width: fit-content;
+    width: 300px;
 }
-
-.slider img {
-    width: 100%;
-    left: 0;
-    position: sticky;
-    object-fit: cover;
-    border-radius: 5px;
-    scroll-snap-align: center;
-}
-*/
