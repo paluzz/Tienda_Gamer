@@ -1,0 +1,63 @@
+/* 
+Paleta de colores 
+Violeta: a22ed0
+Celeste: 2ad2d3
+Naranja: ee8d48
+*/
+
+/*---------------------------------------------------------------------------------------------------------*/
+
+/* ELEMENTOS GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    text-decoration: none;
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+
+/* HEADER */
+
+header .promo {
+    /*hacer animacion de derecha a izquierda y en loop*/
+    background-color: black;
+    color: white;
+}
+
+
+
+/*---------------------------------------------------------------------------------------------------------*/
+
+/* NAVEGACION */
+.navegacion {
+    background-color: #a22ed0;
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+
+/* SLIDER */
+.slider img {
+    /* 
+    hacer animación para que desaparezca uno y aparezca el proximo
+    Desktop: 1600x550
+    Mobile: 800x600
+    */
+    width: 100%;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------*/
+/* TARJETAS Y ENVIOS */
+
+.tarjetas li img {
+    width: 100px;
+}
