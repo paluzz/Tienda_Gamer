@@ -24,6 +24,10 @@ ul {
     list-style: none;
 }
 
+ol {
+    list-style: none;
+}
+
 /*---------------------------------------------------------------------------------------------------------*/
 
 /* HEADER */
@@ -54,7 +58,8 @@ header .promo {
 
 .inicio h1 {
     color: #a22ed0;
-    font-size: calc(2vh + 1vw);
+    -webkit-text-stroke: 0.1vh #000;
+    font-size: calc(3vw + 1vh);
 }
 
 .inicio a {
@@ -118,18 +123,63 @@ header .promo {
 }
 
 
+/*---------------------------------------------------------------------------------------------------------*/
+/* PRODUCTOS */
+.subtitulos {
+    font-size: 2.5em;
+    text-align: center;
+    margin: 10vw 0vw 2vw 0;
+}
 
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.productos-card {
+    background-color: #eee;
+    margin: 10px;
+    flex: 1 1 200px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.productos-card img {
+    max-height: 20vh;
+}
 
 /*---------------------------------------------------------------------------------------------------------*/
 /* MAPA */
-.bus {
-    max-width: 15vh;
+.map {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
 }
+
+.map-bus {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.tienda-card li {
+    background-color: #eee;
+    padding: 20px;
+    margin: 10px;
+    box-sizing: border-box;
+    text-align: initial;
+}
+
+
 
 /*---------------------------------------------------------------------------------------------------------*/
 /* FOOTER */
 
 footer {
+    margin-top: 40px;
     background-color: lightslategray;
 }
 
