@@ -59,5 +59,13 @@ header .promo {
 /* TARJETAS Y ENVIOS */
 
 .tarjetas li img {
-    width: 100px;
+    max-width: 100px;
+}
+
+.tarjetas {
+    max-width: 100px;
+}
+
+.ir_arriba_fixed a img {
+    max-width: 100px;
 }
