@@ -9,6 +9,11 @@
     <script src="https://kit.fontawesome.com/c8cd31a5bc.js" crossorigin="anonymous"></script>
     <!--ESTILOS-->
     <link rel="stylesheet" href="style/styles.css">
+    <!--FUENTES TEXTO-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./fonts/Gill Sans Ultra Bold.otf">
     <!--JAVASCRIPT-->
     <title>La mejor tecnología</title>
 </head>
@@ -22,7 +27,7 @@
             <h5>Retiros gratis en el local</h5>
         </div>
         <!--Logo, usar Favicon-->
-        <div class="inicio">
+        <div class="header">
             <img src="img/favicon.ico" alt="icono de la empresa GC">
             <h1>LA TABERNA GAMER</h1>
             <a href="">
@@ -73,22 +78,22 @@
 
         <!--NOVEDADES-->
         <section id="Ofertas">
-            <h2 class="subtitulos">Novedades</h2>
+            <h2 class="subtitulos">LO MAS VENDIDO</h2>
             <ol class="productos">
                 <li class="productos-card">
-                    <img src="img/lorem.jpg" alt="oferta-1">
+                    <img src="img/lorem.png" alt="oferta-1">
                     <h4 class="productos-nombre">Nombre</h4>
                     <p class="productos-descripcion">Descripcion</p>
                     <p class="productos-precio">$9999</p>
                 </li>
                 <li class="productos-card">
-                    <img src="img/lorem.jpg" alt="oferta-2">
+                    <img src="img/lorem.png" alt="oferta-2">
                     <h4 class="productos-nombre">Nombre</h4>
                     <p class="productos-descripcion">Descripcion</p>
                     <p class="productos-precio">$9999</p>
                 </li>
                 <li class="productos-card">
-                    <img src="img/lorem.jpg" alt="oferta-3">
+                    <img src="img/lorem.png" alt="oferta-3">
                     <h4 class="productos-nombre">Nombre</h4>
                     <p class="productos-descripcion">Descripcion</p>
                     <p class="productos-precio">$9999</p>
@@ -132,22 +137,22 @@
 
         <!--PRODUCTOS MAS VENDIDOS-->
         <section id="Destacados">
-            <h2 class="subtitulos">Destacados</h2>
+            <h2 class="subtitulos">TODO PARA EL GAMER</h2>
             <ol class="productos">
                 <li class="productos-card">
-                    <img src="img/lorem.jpg" alt="mas-vendido-1">
+                    <img src="img/lorem.png" alt="mas-vendido-1">
                     <h4 class="productos-nombre">Nombre</h4>
                     <p class="productos-descripcion">Descripcion</p>
                     <p class="productos-precio">$9999</p>
                 </li>
                 <li class="productos-card">
-                    <img src="img/lorem.jpg" alt="mas-vendido-2">
+                    <img src="img/lorem.png" alt="mas-vendido-2">
                     <h4 class="productos-nombre">Nombre</h4>
                     <p class="productos-descripcion">Descripcion</p>
                     <p class="productos-precio">$9999</p>
                 </li>
                 <li class="productos-card">
-                    <img src="img/lorem.jpg" alt="mas-vendido-3">
+                    <img src="img/lorem.png" alt="mas-vendido-3">
                     <h4 class="productos-nombre">Nombre</h4>
                     <p class="productos-descripcion">Descripcion</p>
                     <p class="productos-precio">$9999</p>
@@ -157,7 +162,6 @@
 
         <!--MAPA-->
         <section id="Mapas">
-            <h2 class="subtitulos"> Nueva sucursal Plaza Irlanda</h2>
             <div class="map">
                 <div class="map-sucursal">
                     <h3>Nuestras Tiendas</h3>
@@ -209,44 +213,50 @@
 
     <!--FOOTER-->
     <footer>
-        <img src=" ./img/favicon.ico" alt="icono de la empresa GC">
-        <h4>Seguinos en nuestras redes</h4>
-        <ul class="footer-social">
-            <li>
-                <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer">
-                    Linkedin
-                    <i class="fa-brands fa-linkedin-in fa-2xl"></i>
-                </a>
+        <div class="footer">
+            <div class="footer-icon">
+                <h4>La Taberna Gamer</h4>
+                <img src=" ./img/favicon.ico" alt="icono de la empresa GC">
+            </div>
+            <ul class="footer-social">
+                <h4>Seguinos en nuestras redes</h4>
+                <li>
+                    <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin-in fa-2xl"></i>
+                        Linkedin
+                    </a>
 
-            </li>
-            <li>
-                <a href="http://instagram.com" target="_blank" rel="noopener noreferrer">
-                    Instagram
-                    <i class="fa-brands fa-instagram fa-2xl"></i>
-                </a>
-            </li>
-            <li>
-                <a href="http://mercadolibre.com.ar" target="_blank" rel="noopener noreferrer">
-                    MercadoLibre
+                </li>
+                <li>
+                    <a href="http://instagram.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-instagram fa-2xl"></i>
+                        Instagram
+                    </a>
+                </li>
+                <li class="footer-social-ml">
+                    <a href="http://mercadolibre.com.ar" target="_blank" rel="noopener noreferrer">
+                        <img src="./img/mercado-libre.svg" alt="mercadolibre" width="40">
+                        MercadoLibre
+                    </a>
+                </li>
+            </ul>
+            <ul class="footer-pago">
+                <li>
+                    <h4>Medios de Pago</h4>
                     <img src="./img/mercado-libre.svg" alt="mercadolibre" width="50">
-                </a>
-            </li>
-            <li>
-                Medios de Pago
-                <img src="./img/mercado-libre.svg" alt="mercadolibre" width="50">
-                <img src="" alt="pago2">
-                <img src="" alt="pago3">
-            </li>
-            <li>
-                Medios de envios
-                <img src="" alt="envio1">
-                <img src="" alt="envio2">
-            </li>
-            <li>
-                <a href="./soporte.html">Ayuda</a>
-            </li>
-        </ul>
-
+                    <img src="" alt="pago2">
+                    <img src="" alt="pago3">
+                </li>
+                <li>
+                    Medios de envios
+                    <img src="" alt="envio1">
+                    <img src="" alt="envio2">
+                </li>
+                <li>
+                    <a href="./soporte.html">Ayuda</a>
+                </li>
+            </ul>
+        </div>
     </footer>
 </body>
 
