@@ -14,7 +14,6 @@ Naranja: #ee8d48
     box-sizing: border-box;
 }
 
-
 a {
     text-decoration: none;
     color: black;
@@ -32,18 +31,19 @@ ol {
 
 /* HEADER */
 
-header .promo {
-
+.promo {
     /*hacer animacion de derecha a izquierda y en loop*/
     background-color: black;
     color: white;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    margin: 0px;
 }
 
 /*LOGO TITULO CARRITO*/
+
 .inicio {
-    background-color: #eee;
+    background-color: #ddd;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -54,12 +54,14 @@ header .promo {
     margin-top: 1vh;
     max-width: 10vh;
     width: calc(4vh+4vw);
+    cursor: pointer;
 }
 
 .inicio h1 {
     color: #a22ed0;
     -webkit-text-stroke: 0.1vh #000;
     font-size: calc(3vw + 1vh);
+    cursor: pointer;
 }
 
 .inicio a {
@@ -67,11 +69,17 @@ header .promo {
     text-decoration: none;
 }
 
+@media(hover:hover) {
+    .inicio a:hover {
+        color: #ee8d48;
+    }
+}
+
 /*---------------------------------------------------------------------------------------------------------*/
 /* NAVEGACION */
 .navegacion {
     font-size: calc(1vh + 1vw);
-    background-color: #eee;
+    background-color: #ddd;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -83,18 +91,18 @@ header .promo {
     padding: 0px 2vh 0px 5vh;
 }
 
+@media(hover:hover) {
+    .navegacion li a:hover {
+        color: #ee8d48;
+    }
+}
 
 /*---------------------------------------------------------------------------------------------------------*/
 /* SLIDER */
 .slider img {
-    /* 
-    hacer animación para que desaparezca uno y aparezca el proximo
-    Desktop: 1600x550
-    Mobile: 800x600
-    */
+    cursor: pointer;
     width: 100vw;
 }
-
 
 /*---------------------------------------------------------------------------------------------------------*/
 /* TARJETAS Y ENVIOS */
@@ -125,10 +133,19 @@ header .promo {
 
 /*---------------------------------------------------------------------------------------------------------*/
 /* PRODUCTOS */
+#Ofertas {
+    background: #eee;
+}
+
+#Destacados {
+    background: #eee;
+}
+
 .subtitulos {
+    background: #eee;
     font-size: 2.5em;
     text-align: center;
-    margin: 10vw 0vw 2vw 0;
+    padding: 10vw 0vw 2vw 0;
 }
 
 .productos {
@@ -139,7 +156,7 @@ header .promo {
 }
 
 .productos-card {
-    background-color: #eee;
+    background-color: #ddd;
     margin: 10px;
     flex: 1 1 200px;
     box-sizing: border-box;
@@ -156,23 +173,23 @@ header .promo {
     display: flex;
     justify-content: space-around;
     margin-bottom: 40px;
+    flex-wrap: wrap;
+    background-color: #eee;
 }
 
-.map-bus {
+.map-sucursal {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-
 .tienda-card li {
-    background-color: #eee;
+    background-color: #ddd;
     padding: 20px;
     margin: 10px;
     box-sizing: border-box;
     text-align: initial;
 }
-
 
 
 /*---------------------------------------------------------------------------------------------------------*/
