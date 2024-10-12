@@ -54,7 +54,6 @@ ol {
 
 /*---------------------------------------------------------------------------------------------------------*/
 /*LOGO TITULO CARRITO*/
-
 .header {
     background: rgb(28, 63, 84);
     background: linear-gradient(135deg, rgba(28, 63, 84, 1) 0%, rgba(28, 63, 84, 1) 70.6%, rgba(186, 89, 180, 1)70.9%, rgba(45, 16, 36, 1) 71.85%, rgba(45, 16, 36, 1) 100%);
@@ -83,15 +82,46 @@ ol {
     text-decoration: none;
 }
 
+.carro-mob {
+    display: none;
+}
+
 @media(hover:hover) {
     .header a:hover {
         color: #a22ed0;
     }
 }
 
+/*AJUSTAR VALORES DE FONDO O AcOMODAR IMAGEN*/
+@media screen and (width<=600px) {
+    .header {
+        background: linear-gradient(135deg, rgba(28, 63, 84, 1) 0%, rgba(28, 63, 84, 1) 73.6%, rgba(186, 89, 180, 1)73.6%, rgba(45, 16, 36, 1) 74.5%, rgba(45, 16, 36, 1) 100%);
+    }
+
+    .header h1 {
+        font-size: 1em;
+    }
+
+    .header img {
+        width: 4vh;
+    }
+
+    /*REMOVER CLASS fa-2xl*/
+    .carro-mob {
+        display: contents;
+    }
+
+    .carro-2xl {
+        display: none;
+    }
+}
+
 /*---------------------------------------------------------------------------------------------------------*/
 /* NAVEGACION */
-.navegacion {
+/*
+AJUSTAR FONDO DE NAVEGACION PARA MOBILE, 
+*/
+.nav-desktop {
     font-size: calc(1vh + 1vw);
     background: rgb(28, 63, 84);
     background: linear-gradient(135deg, rgba(28, 63, 84, 1) 0%, rgba(28, 63, 84, 1) 67.45%, rgba(186, 89, 180, 1)67.45%, rgba(45, 16, 36, 1) 68.25%, rgba(45, 16, 36, 1) 100%);
@@ -100,16 +130,48 @@ ol {
     justify-content: flex-end;
 }
 
-
-.navegacion li a {
+.nav-desktop li a {
     color: white;
     text-decoration: none;
     padding: 0px 2vh 0px 5vh;
 }
 
 @media(hover:hover) {
-    .navegacion li a:hover {
+    .nav-desktop li a:hover {
         -webkit-text-stroke: 0.1vh #ee8d48;
+    }
+}
+
+.nav-mobile {
+    background-color: #3698DB;
+    display: flex;
+    bottom: 0;
+    width: 100vw;
+    position: fixed;
+    height: 8vh;
+    align-items: center;
+    justify-content: space-around;
+    visibility: hidden;
+}
+
+.nav-mobile li a img {
+    color: white;
+    text-decoration: none;
+    max-width: 10vw;
+
+}
+
+@media screen and (width<=600px) {
+    .nav-mobile {
+        visibility: visible;
+    }
+
+    .nav-desktop {
+        display: none;
+    }
+
+    .ir_arriba_fixed {
+        visibility: hidden;
     }
 }
 
@@ -183,6 +245,7 @@ ol {
     width: calc(6vw+3vh);
 }
 
+
 .tarjetas li h4 {
     margin-top: 1vw;
     margin-bottom: 0.5vw;
@@ -193,17 +256,22 @@ ol {
 /* MAPA */
 .map {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-bottom: 40px;
     padding-top: 100px;
     flex-wrap: wrap;
     background-color: #eee;
+
 }
 
 .map-sucursal {
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+
+.map-iframe {
+    width: 50vw;
 }
 
 .tienda-card li {
@@ -214,6 +282,11 @@ ol {
     text-align: initial;
 }
 
+@media screen and (width <=800px) {
+    .map-iframe {
+        width: 75vw;
+    }
+}
 
 /*---------------------------------------------------------------------------------------------------------*/
 /* FOOTER */
