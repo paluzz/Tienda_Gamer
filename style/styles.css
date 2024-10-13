@@ -1,7 +1,6 @@
 /* 
 Paleta de colores 
 Violeta: #a22ed0
-Celeste: #3698DB
 Naranja: #ee8d48
 */
 
@@ -231,10 +230,17 @@ AJUSTAR FONDO DE NAVEGACION PARA MOBILE,
     flex: 1 1 200px;
     box-sizing: border-box;
     text-align: center;
+    cursor: pointer;
 }
 
 .productos-card img {
     max-height: 20vh;
+}
+
+@media (hover:hover) {
+    .productos-card:hover {
+        transform: translateY(-5px);
+    }
 }
 
 /*---------------------------------------------------------------------------------------------------------*/
