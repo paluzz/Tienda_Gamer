@@ -231,6 +231,7 @@ AJUSTAR FONDO DE NAVEGACION PARA MOBILE,
     box-sizing: border-box;
     text-align: center;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .productos-card img {
@@ -240,6 +241,7 @@ AJUSTAR FONDO DE NAVEGACION PARA MOBILE,
 @media (hover:hover) {
     .productos-card:hover {
         transform: translateY(-5px);
+        box-shadow: 5px 8px 5px 3px rgba(0, 0, 0, 0.75);
     }
 }
 
