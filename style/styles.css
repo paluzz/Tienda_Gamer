@@ -350,6 +350,7 @@ textarea {
 
     .enviar:hover {
         background-color: #a22ed0;
+        color: white;
     }
 
     .nombre-input:focus,
