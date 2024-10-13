@@ -9,104 +9,156 @@
     <script src="https://kit.fontawesome.com/c8cd31a5bc.js" crossorigin="anonymous"></script>
     <!--ESTILOS-->
     <link rel="stylesheet" href="../style/styles.css">
+    <!--FUENTES TEXTO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./fonts/Gill Sans Ultra Bold.otf">
     <!--JAVASCRIPT-->
     <title>La mejor tecnología</title>
 </head>
 
 <body>
     <!--HEADER-->
-    <header id="Inicio">
+    <header>
         <!--PROMOCION-->
-        <h5 class="promo">Hasta 6 cuotas sin interes Retiros Gratis en Local</h5>
+        <div class="promo">
+            <h5>Hasta 6 cuotas sin interes</h5>
+            <h5>Retiros gratis en el local</h5>
+        </div>
         <!--Logo, usar Favicon-->
-        <div class="inicio">
-            <img src="../img/favicon.ico" alt="icono de la empresa GC">
-            <h1>Gaming Crafsters</h1>
+        <div class="header">
+            <img src="../img/icons/favicon.ico" alt="icono de la empresa GC">
+            <h1>LA TABERNA GAMER</h1>
             <a href="">
-                <i class="shopping fa-solid fa-cart-shopping fa-2xl"></i>
+                <i class="carro-2xl fa-solid fa-cart-shopping fa-2xl"></i>
+                <i class="carro-mob fa-solid fa-cart-shopping"></i>
             </a>
         </div>
-    </header>
-    <!--BARRA NAVEGACION-->
-    <nav>
-        <ul class="navegacion">
-            <li>
-                <a href="../index.html">Inicio</a>
-            </li>
-            <li>
-                <a href="../index.html#Ofertas">Ofertas</a>
-            </li>
-            <li>
-                <a href="../index.html#Productos">Productos</a>
-            </li>
-            <li>
-                <a href="../index.html#Mapas">Ubicación</a>
-            </li>
-            <li>
-                <a href="#Contacto">Ayuda</a>
-            </li>
+        <!--BARRA NAVEGACION PC-->
+        <nav>
+            <div class="ir_arriba_fixed">
+                <a href="../index.html">
+                    <img src="../img/icons/inicio.png" alt="ir arriba">
+                </a>
+            </div>
 
-        </ul>
-    </nav>
+            <ul class="nav-desktop">
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="../index.html#Ofertas">Ofertas</a>
+                </li>
+                <li>
+                    <a href="productos.html#Productos">Productos</a>
+                </li>
+                <li>
+                    <a href="../index.html#Mapas">Ubicación</a>
+                </li>
+                <li>
+                    <a href="#Contacto">Ayuda</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- BARRA NAVEGACION MOBILE-->
+        <nav>
+            <ul class="nav-mobile">
+                <li>
+                    <a href="../index.html"><img src="../img/icons/home.png" alt="home"></a>
+                </li>
+                <li>
+                    <a href="./pages/soporte.html#Busqueda"><img src="../img/icons/search.png" alt="search"></a>
+                </li>
+                <li>
+                    <a href="#Productos"><img src="../img/icons/shopping.png" alt="shopping"></a>
+                </li>
+                <li>
+                    <a href="../index.html#Mapas"><img src="../img/icons/location.png" alt="donde estamos"></a>
+                </li>
+                <li>
+                    <a href="./pages/soporte.html"><img src="../img/icons/help.png" alt="help"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <!--MAIN-->
     <main>
+
         <!--SLIDER-->
         <section id="slider">
             <div class="slider">
-                <img src="../img/main1.png" alt="imagen principal1">
-                <!--
-                       <img src="./img/main2.png" alt="imagen principal2">
-                    <img src="./img/main3.png" alt="imagen principal3">
-                    -->
+                <img src="../img/banner/main_1600x500.png" alt="imagen principal">
             </div>
         </section>
+        <!--BUSQUEDA-->
+        <section id="Busqueda">
+            <div class="busqueda">
+                <input type="search" name="search" id="search" placeholder="Buscar Productos">
+                <a href="">
+                    <img src="../img/icons/search.png" alt="busqueda" width="30">
+                </a>
+
+            </div>
+        </section>
+
         <!--CONTACTO-->
         <section id="Contacto">
-            <h3>Dejanos tus consultas</h3>
-            <!-- Formspree para recibir los correos al hacer submit-->
-            <form action="https://formspree.io/f/xvgopvaq" method="POST">
-                <label for="nombre">Nombre</label>
-                <input name="nombre" id="nombre" type="text" placeholder="Juan Doe">
-                <label for="email">Email</label>
-                <input type="email" placeholder="JuanDoe@gmail...">
-                <label for="mensaje">Mensaje:</label>
-                <textarea name="mensaje" placeholder="Tengo un problema..." rows="4" cols="20"></textarea>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Borrar">
-            </form>
+            <div class="contacto">
+                <h3 class>Dejanos tus consultas</h3>
+                <!-- Formspree para recibir los correos al hacer submit-->
+                <form action="https://formspree.io/f/xvgopvaq" method="POST">
+                    <label class="nombre" for="nombre">Nombre</label>
+                    <input class="nombre-input" name="nombre" id="nombre" type="text" placeholder="Juan Doe">
+                    <label class="email" for="email">Email</label>
+                    <input class="email-input" type="email" placeholder="JuanDoe@gmail...">
+                    <label class="mensaje" for="mensaje">Mensaje:</label>
+                    <textarea class="mensaje-input" name="mensaje" placeholder="Tengo un problema..." rows="4"
+                        cols="20"></textarea>
+                    <input class="enviar" type="submit" value="Enviar">
+                    <input class="borrar" type="reset" value="Borrar">
+                    <div class="vacio"></div>
+                </form>
+            </div>
         </section>
     </main>
     <!--FOOTER-->
     <footer>
-        <img src="../img/favicon.ico" alt="icono de la empresa GC">
-        <h4>Seguinos en nuestras redes</h4>
-        <ul class="footer-social">
-            <li>
-                <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer">Linkedin</a>
-            </li>
-            <li>
-                <a href="http://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-            </li>
-            <li>
-                <a href="http://mercadolibre" target="_blank" rel="noopener noreferrer">ML</a>
-            </li>
-            <li>
-                Medios de Pago
-                <img src="" alt="pago1">
-                <img src="" alt="pago2">
-                <img src="" alt="pago3">
-            </li>
-            <li>
-                Medios de envios
-                <img src="" alt="envio1">
-                <img src="" alt="envio2">
-            </li>
-            <li class="ir_arriba_fixed">
-                <a href="../index.html#Inicio">
-                    <img src="../img/inicio.png" alt="ir arriba">
-                </a>
-            </li>
-        </ul>
+        <div class="footer">
+            <div class="footer-icon">
+                <h4>La Taberna Gamer</h4>
+                <img src="../img/icons/favicon.ico" alt="icono de la empresa GC">
+            </div>
+            <ul class="footer-social">
+                <h4>Seguinos en nuestras redes</h4>
+                <li>
+                    <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin-in fa-2xl"></i>
+                        <h6>
+                            Linkedin
+                        </h6>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://instagram.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-instagram fa-2xl"></i>
+                        <h6>Instagram</h6>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://facebook.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-facebook fa-2xl"></i>
+                        <h6>Facebook</h6>
+                    </a>
+                </li>
+            </ul>
+            <ul class="footer-pago">
+                <li>
+                    <h4>Medios de Pago</h4>
+                    <img src="../img/icons/tarjetas100.png" alt="pago2">
+                </li>
+            </ul>
+        </div>
     </footer>
 </body>
 
