@@ -140,7 +140,9 @@ header {
     max-width: 10vw;
 }
 
+/*---------------------------------------------------------------------------------------------------------*/
 /*BUSQUEDA*/
+
 .busqueda {
     display: flex;
     align-items: center;
@@ -161,23 +163,14 @@ header {
 }
 
 @media (hover:hover) {
-
     .busqueda a img:hover {
         background-color: #a22ed0;
     }
-}
 
-@media only screen and(width <=600) {
-    .busqueda {
-        margin-right: 0;
-        justify-content: center;
-    }
-
-    .busqueda a {
-        margin: 0;
+    .busqueda input:focus {
+        background-color: rgba(162, 46, 208, 0.4);
     }
 }
-
 
 /*---------------------------------------------------------------------------------------------------------*/
 /* SLIDER */
@@ -360,13 +353,12 @@ textarea {
     .borrar:hover {
         background-color: #a22ed0;
     }
-}
 
-@media (active:active) {
-
-    .enviar:active,
-    .borrar:active {
+    .nombre-input:focus,
+    .email-input:focus,
+    .mensaje-input:focus {
         border-color: #a22ed0;
+        background-color: rgba(162, 46, 208, 0.4);
     }
 }
 
@@ -496,6 +488,7 @@ footer {
     /* NAVEGACION*/
     .nav-mobile {
         visibility: visible;
+        z-index: 1;
     }
 
     .nav-desktop {
@@ -504,6 +497,16 @@ footer {
 
     .ir_arriba_fixed {
         visibility: hidden;
+    }
+
+    /* BUSQUEDA */
+    .busqueda {
+        margin-right: 0;
+        justify-content: center;
+    }
+
+    .busqueda a {
+        margin: 0;
     }
 
     /*TARJETAS */
@@ -524,6 +527,7 @@ footer {
 
     /* FOOTER */
     .footer {
+        max-width: 50vw;
         flex-wrap: wrap-reverse;
     }
 
@@ -532,6 +536,7 @@ footer {
     .footer ul li h4 {
         font-size: 12px;
         align-items: center;
+
     }
 
     .footer-pago img {
