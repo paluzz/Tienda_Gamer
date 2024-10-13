@@ -49,18 +49,22 @@ ol {
     color: white;
     display: flex;
     justify-content: space-evenly;
-    margin: 0px;
 }
 
 /*---------------------------------------------------------------------------------------------------------*/
 /*LOGO TITULO CARRITO*/
+header {
+    position: absolute;
+    max-width: 1600px;
+    width: 100%;
+}
+
 .header {
-    background: rgb(28, 63, 84);
-    background: linear-gradient(135deg, rgba(28, 63, 84, 1) 0%, rgba(28, 63, 84, 1) 70.6%, rgba(186, 89, 180, 1)70.9%, rgba(45, 16, 36, 1) 71.85%, rgba(45, 16, 36, 1) 100%);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0px 2vw 0px 2vw;
+    z-index: 1;
 }
 
 .header img {
@@ -92,30 +96,6 @@ ol {
     }
 }
 
-/*AJUSTAR VALORES DE FONDO O AcOMODAR IMAGEN*/
-@media screen and (width<=600px) {
-    .header {
-        background: linear-gradient(135deg, rgba(28, 63, 84, 1) 0%, rgba(28, 63, 84, 1) 73.6%, rgba(186, 89, 180, 1)73.6%, rgba(45, 16, 36, 1) 74.5%, rgba(45, 16, 36, 1) 100%);
-    }
-
-    .header h1 {
-        font-size: 1em;
-    }
-
-    .header img {
-        width: 4vh;
-    }
-
-    /*REMOVER CLASS fa-2xl*/
-    .carro-mob {
-        display: contents;
-    }
-
-    .carro-2xl {
-        display: none;
-    }
-}
-
 /*---------------------------------------------------------------------------------------------------------*/
 /* NAVEGACION */
 /*
@@ -123,11 +103,13 @@ AJUSTAR FONDO DE NAVEGACION PARA MOBILE,
 */
 .nav-desktop {
     font-size: calc(1vh + 1vw);
-    background: rgb(28, 63, 84);
+    /* background: rgb(28, 63, 84);
     background: linear-gradient(135deg, rgba(28, 63, 84, 1) 0%, rgba(28, 63, 84, 1) 67.45%, rgba(186, 89, 180, 1)67.45%, rgba(45, 16, 36, 1) 68.25%, rgba(45, 16, 36, 1) 100%);
+   */
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    z-index: 99;
 }
 
 .nav-desktop li a {
@@ -179,6 +161,8 @@ AJUSTAR FONDO DE NAVEGACION PARA MOBILE,
 /* SLIDER */
 .slider {
     background: #eee;
+    position: relative;
+    z-index: -1;
 }
 
 .slider img {
@@ -316,20 +300,33 @@ footer {
     justify-content: space-between;
 }
 
+.footer-social h4 {
+    margin-bottom: 30px;
+}
+
+.footer-social li {
+    display: grid;
+    grid-template-rows: 1fr 20px 1fr;
+    grid-template-columns: 20px 20px 20px;
+}
+
 .footer-social li a {
-    padding: 20px 0px 0px 0px;
+    gap: 40px;
+    display: flex;
 }
 
-.footer-social li a i {
-    padding: 20px;
+.footer-social li a i,
+.footer-social li a img {
+    grid-row: 1/2;
+    grid-column: 1/2;
 }
 
-.footer-social-ml {
-    display: inline;
-    padding: 10px;
+.footer-social li a h6 {
+    grid-row: 3/4;
+    margin: 0;
+    padding: 0;
+    align-items: center;
 }
-
-
 
 
 
@@ -355,4 +352,28 @@ footer {
 .ir_arriba_fixed a img {
     /*tamaño img*/
     max-width: 7vh;
+}
+
+
+
+/*------------------------------------------------------*/
+/*TAMAÑO CELULAR*/
+@media only screen and (width<=600px) {
+
+    .header h1 {
+        font-size: 1em;
+    }
+
+    .header img {
+        width: 4vh;
+    }
+
+    /*REMOVER CLASS fa-2xl*/
+    .carro-mob {
+        display: contents;
+    }
+
+    .carro-2xl {
+        display: none;
+    }
 }
