@@ -136,31 +136,21 @@ AJUSTAR FONDO DE NAVEGACION PARA MOBILE,
     visibility: hidden;
 }
 
+.nav-mobile li a {
+    padding: 4.5vh 15px;
+}
+
 .nav-mobile li a img {
     color: white;
     text-decoration: none;
     max-width: 10vw;
-
 }
 
-@media screen and (width<=600px) {
-    .nav-mobile {
-        visibility: visible;
-    }
-
-    .nav-desktop {
-        display: none;
-    }
-
-    .ir_arriba_fixed {
-        visibility: hidden;
-    }
-}
 
 /*---------------------------------------------------------------------------------------------------------*/
 /* SLIDER */
 .slider {
-    background: #eee;
+    background: black;
     position: relative;
     z-index: -1;
 }
@@ -236,6 +226,8 @@ AJUSTAR FONDO DE NAVEGACION PARA MOBILE,
 }
 
 
+
+
 /*---------------------------------------------------------------------------------------------------------*/
 /* MAPA */
 .map {
@@ -266,11 +258,6 @@ AJUSTAR FONDO DE NAVEGACION PARA MOBILE,
     text-align: initial;
 }
 
-@media screen and (width <=800px) {
-    .map-iframe {
-        width: 75vw;
-    }
-}
 
 /*---------------------------------------------------------------------------------------------------------*/
 /* FOOTER */
@@ -328,6 +315,10 @@ footer {
     align-items: center;
 }
 
+.footer-pago img {
+    margin-top: 40px;
+}
+
 
 
 /*---------------------------------------------------------------------------------------------------------*/
@@ -361,19 +352,72 @@ footer {
 @media only screen and (width<=600px) {
 
     .header h1 {
-        font-size: 1em;
+        font-size: 6vw;
     }
 
     .header img {
         width: 4vh;
     }
 
-    /*REMOVER CLASS fa-2xl*/
+    /*TAMAÑOS ICONOS*/
     .carro-mob {
         display: contents;
     }
 
     .carro-2xl {
         display: none;
+    }
+
+    /* NAVEGACION*/
+    .nav-mobile {
+        visibility: visible;
+    }
+
+    .nav-desktop {
+        display: none;
+    }
+
+    .ir_arriba_fixed {
+        visibility: hidden;
+    }
+
+    /*TARJETAS */
+    .tarjetas li p {
+        font-size: 3vw;
+    }
+
+    /* OFERTAS */
+    .subtitulos {
+        font-size: 6vw;
+    }
+
+    /* MAP */
+    .map-iframe {
+        width: 90vw;
+        margin-bottom: 5vh;
+    }
+
+    /* FOOTER */
+    .footer {
+        flex-wrap: wrap-reverse;
+    }
+
+    .footer h4,
+    .footer ul h4,
+    .footer ul li h4 {
+        font-size: 12px;
+        align-items: center;
+    }
+
+    .footer-pago img {
+        margin: 10px 0px;
+    }
+}
+
+/*TAMAÑO TABLET*/
+
+@media only screen and (600px<=width<=786px) {
+    .map-iframe {
+        width: 75vw;
     }
 }
