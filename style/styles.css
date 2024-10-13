@@ -97,14 +97,9 @@ header {
 
 /*---------------------------------------------------------------------------------------------------------*/
 /* NAVEGACION */
-/*
-AJUSTAR FONDO DE NAVEGACION PARA MOBILE, 
-*/
+
 .nav-desktop {
     font-size: calc(1vh + 1vw);
-    /* background: rgb(28, 63, 84);
-    background: linear-gradient(135deg, rgba(28, 63, 84, 1) 0%, rgba(28, 63, 84, 1) 67.45%, rgba(186, 89, 180, 1)67.45%, rgba(45, 16, 36, 1) 68.25%, rgba(45, 16, 36, 1) 100%);
-   */
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -124,7 +119,7 @@ AJUSTAR FONDO DE NAVEGACION PARA MOBILE,
 }
 
 .nav-mobile {
-    background-color: #3698DB;
+    background-color: rgba(162, 46, 208, 1);
     display: flex;
     bottom: 0;
     width: 100vw;
