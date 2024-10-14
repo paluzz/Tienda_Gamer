@@ -47,7 +47,23 @@ ol {
     background-color: black;
     color: white;
     display: flex;
-    justify-content: space-evenly;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.promo h5 {
+    animation: slidein 10s linear infinite;
+}
+
+@keyframes slidein {
+
+    0% {
+        transform: translateX(100vw);
+    }
+
+    100% {
+        transform: translateX(-100vw);
+    }
 }
 
 /*---------------------------------------------------------------------------------------------------------*/
@@ -258,6 +274,7 @@ header {
     font-size: 14px;
     font-weight: 700;
     background-color: #01be00;
+    box-shadow: 4px 7px 4px 3px rgba(0, 0, 0, 0.6);
     border-radius: 2px;
     margin: 7px 0px;
     padding: 4px 5px;
