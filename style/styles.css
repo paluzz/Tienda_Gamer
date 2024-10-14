@@ -11,7 +11,7 @@ Naranja: #ee8d48
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Gil Sans Ultra Bold", sans-serif;
+    font-family: 'Cascadia Code', monospace, sans-serif;
 }
 
 body {
@@ -215,12 +215,14 @@ header {
     background: #eee;
     color: black;
     -webkit-text-stroke: 0.1vh #a22ed0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bolder;
+
+    font-weight: bold;
+    font-style: italic;
     font-size: 4em;
     text-align: center;
     padding: 10vw 0vw 2vw 0;
     border-color: black;
+
 }
 
 .productos {
