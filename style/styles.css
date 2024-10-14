@@ -270,7 +270,7 @@ header {
 .productos-descuento h6 {
     position: absolute;
     left: 0;
-    top: 10px;
+    top: 0px;
     font-size: 14px;
     font-weight: 700;
     background-color: #01be00;
@@ -278,10 +278,11 @@ header {
     border-radius: 2px;
     margin: 7px 0px;
     padding: 4px 5px;
+    transform: rotate(-3deg);
 }
 
-.hot {
-    background-color: crimson;
+.productos-descuento .hot {
+    background-color: red;
     color: white;
 }
 
