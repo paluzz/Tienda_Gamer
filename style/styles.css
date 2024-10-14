@@ -49,6 +49,7 @@ ol {
     display: flex;
     overflow: hidden;
     justify-content: space-between;
+    align-items: center;
 }
 
 .promo h5 {
@@ -185,6 +186,7 @@ header {
 
     .busqueda input:focus {
         background-color: rgba(162, 46, 208, 0.4);
+        width: 50vw;
     }
 }
 
@@ -283,7 +285,7 @@ header {
     transform: rotate(-3deg);
 }
 
-.productos-descuento .hot {
+.hot h6 {
     background-color: red;
     color: white;
 }
@@ -569,6 +571,11 @@ footer {
     }
 
     .carro-2xl {
+        display: none;
+    }
+
+    /* PROMO */
+    .promo-mobile {
         display: none;
     }
 
