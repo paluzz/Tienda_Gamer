@@ -241,7 +241,8 @@ header {
     position: relative;
     margin: 20px;
     padding-bottom: 10vh;
-    flex: 0.8 1 100px;
+    flex: 0.5 1 200px;
+    flex-flow: row;
     box-sizing: border-box;
     text-align: center;
     border-radius: 10px;
@@ -249,12 +250,11 @@ header {
 }
 
 .productos-card img {
-    max-height: 25vh;
-    margin: 20px 0px;
+    max-height: 22vh;
+    margin: 20px 0px 0px 0px;
 }
 
 .productos-nombre {
-    margin-top: 40px;
     font-weight: bold;
 }
 
@@ -603,9 +603,53 @@ footer {
         margin: 0;
     }
 
-    /*TARJETAS */
-    .tarjetas li p {
+    /* PRODUCTOS */
+
+    .productos {
+        justify-content: space-around;
+        font-size: 2.6vw;
+        flex-flow: column;
+    }
+
+    .productos-card {
+        padding-bottom: 4vh;
+    }
+
+    .productos-card img {
+        max-height: 18vh;
+        margin: 20px 0px 0px 0px;
+    }
+
+    .productos-nombre {
+        margin-top: 0px;
+    }
+
+    .productos-descuento h6 {
         font-size: 3vw;
+    }
+
+    .productos-descuento p {
+        font-size: 3vw;
+    }
+
+    .productos-boton {
+        font-size: 2.6vw;
+    }
+
+    /*TARJETAS */
+    .tarjetas {
+        margin: 10vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tarjetas li {
+        font-size: 2vw;
+        max-width: 50vh;
+        max-height: 100px;
+        margin: 0vh 3vh 0vh 3vh;
+        text-align: center;
     }
 
     /* OFERTAS */
@@ -628,10 +672,16 @@ footer {
     }
 
     .footer {
+        display: flex;
         padding: 10vh 0px;
         flex-direction: row;
         flex-wrap: wrap;
     }
+
+    .footer-social li {
+        display: grid;
+    }
+
 
     .footer h4,
     .footer ul h4,
