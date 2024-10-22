@@ -93,7 +93,7 @@ header {
 .header h1 {
     color: white;
     -webkit-text-stroke: 0.2vh #ee8d48;
-    font-size: calc(3vw + 2em);
+    font-size: calc(1vw + 2em);
     cursor: pointer;
 }
 
@@ -160,33 +160,40 @@ header {
 /*---------------------------------------------------------------------------------------------------------*/
 /*BUSQUEDA*/
 
-.busqueda {
+.busqueda-main {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    margin-right: 40px;
 }
 
-.busqueda a img {
-    margin-top: 3.5px;
-    background-color: rgba(162, 46, 208, 0.6);
-    border-radius: 2px 10px 10px 2px;
-}
 
-.busqueda input {
-    padding: 5px 10px;
-    border-radius: 5px 0px 0px 5px;
+.busqueda-main input {
+    border-radius: 15px 0px 0px 15px;
     border-color: #a22ed0;
+    padding: 1.2vw 2vw;
+    font-size: 1.2rem;
+
+}
+
+
+.busqueda-main a img {
+    padding: 1vw 0px;
+    border-color: #a22ed0;
+    border-radius: 2px 15px 15px 2px;
+}
+
+.busqueda-mob {
+    display: none;
 }
 
 @media (hover:hover) {
-    .busqueda a img:hover {
+    .busqueda-main a img:hover {
         background-color: #a22ed0;
     }
 
-    .busqueda input:focus {
+    .busqueda-main input:focus {
         background-color: rgba(162, 46, 208, 0.4);
-        width: 50vw;
+        color: white;
+        /* width: 50vw; */
     }
 }
 
@@ -258,7 +265,7 @@ header {
 
 .productos-nombre {
     font-weight: bold;
-    font-size: 1.2vw;
+    font-size: 1rem;
     max-height: 50px;
 }
 
@@ -559,7 +566,7 @@ footer {
 
 /*------------------------------------------------------*/
 /*TAMAÑO CELULAR*/
-@media only screen and (width<=600px) {
+@media only screen and (width<=650px) {
 
     .header h1 {
         font-size: 6vw;
@@ -598,21 +605,19 @@ footer {
     }
 
     /* BUSQUEDA */
-    .busqueda {
-        margin-right: 0;
-        justify-content: center;
+    .busqueda-main,
+    .busqueda-input,
+    .busqueda-main a img {
+        display: none;
     }
 
-    .busqueda a {
-        margin: 0;
-    }
 
     /* PRODUCTOS */
 
     .productos {
         justify-content: space-around;
+        align-items: center;
         font-size: 2.6vw;
-        flex-flow: column;
     }
 
     .productos-card {
@@ -626,6 +631,7 @@ footer {
 
     .productos-nombre {
         margin-top: 0px;
+        font-size: 0.8rem;
     }
 
     .productos-descuento h6 {
@@ -701,8 +707,27 @@ footer {
 
 /*TAMAÑO TABLET*/
 
-@media only screen and (600px<=width<=786px) {
+@media only screen and (650px<=width<=786px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
     .map-iframe {
         width: 75vw;
     }
+
+    .busqueda-main,
+    .busqueda-input,
+    .busqueda-main a img {
+        display: none;
+    }
+}
+
+@media only screen and (width<=1024px) {
+
+    .busqueda-main input {
+        padding: 1.2vw 1.5vw;
+    }
+
+
 }
