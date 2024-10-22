@@ -171,13 +171,10 @@ header {
     border-color: #a22ed0;
     padding: 1.2vw 2vw;
     font-size: 1.2rem;
-
 }
-
 
 .busqueda-main a img {
     padding: 1vw 0px;
-    border-color: #a22ed0;
     border-radius: 2px 15px 15px 2px;
 }
 
@@ -187,7 +184,7 @@ header {
 
 @media (hover:hover) {
     .busqueda-main a img:hover {
-        background-color: #a22ed0;
+        background-color: #ee8d48;
     }
 
     .busqueda-main input:focus {
@@ -267,6 +264,7 @@ header {
     font-weight: bold;
     font-size: 1rem;
     max-height: 50px;
+    margin-bottom: 5px;
 }
 
 .productos-descuento {
@@ -309,6 +307,7 @@ header {
 .productos-cuotas {
     color: grey;
 }
+
 
 .productos-boton {
     display: inline-block;

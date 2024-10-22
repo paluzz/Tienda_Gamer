@@ -1,0 +1,125 @@
+#carrito-principal {
+    display: flex;
+    flex-direction: column;
+    background-color: #eee;
+    margin: 2vw;
+}
+
+.carrito-ruta {
+    margin: 2vw 5vw;
+}
+
+.carrito-producto {
+    background-color: #eee;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1vw 5vw;
+    gap: 10vw;
+}
+
+hr {
+    margin: 30px 0;
+}
+
+/* PARTE IZQUIERDA */
+.carrito-card {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.carrito-img-izq {
+    flex-direction: column;
+    justify-content: space-around;
+    display: flex;
+}
+
+.carrito-img-izq img {
+    width: 100px;
+}
+
+.carrito-img-main img {
+    width: 300px;
+    height: 100%;
+}
+
+/* PARTE DERECHA */
+.carrito-compra {
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+}
+
+.carrito-compra h2 {
+    justify-content: center;
+}
+
+.carrito-descripcion-precio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+.tachado {
+    font-size: 1.2rem;
+    text-decoration: line-through;
+    color: grey;
+}
+
+.precio {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.carrito-compra-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cantidad-disponible {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    max-width: 80%;
+    border-radius: 5px;
+}
+
+.cantidad-disponible>button {
+    padding: 5px 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.cantidad-disponible p {
+    font-size: 1.2rem;
+}
+
+/* SEGUNDA PAGINA */
+
+.carrito-descripcion-expandida {
+    margin: 50px 5vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #eee;
+    gap: 30px;
+}
+
+.carrito-descripcion-expandida h3 {
+    font-weight: bold;
+}
+
+.carrito-cards-relacionados ol {
+    display: flex;
+    flex-direction: row;
+    gap: 20px
+}
+
+.carrito-cards-relacionados>img {
+    max-width: 40px;
+}

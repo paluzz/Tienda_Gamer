@@ -10,6 +10,7 @@
     <script src="https://kit.fontawesome.com/c8cd31a5bc.js" crossorigin="anonymous"></script>
     <!--ESTILOS-->
     <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="../style/carrito.css">
     <!--FUENTES TEXTO-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,18 +20,248 @@
     <!--JAVASCRIPT-->
     <title>La mejor tecnología</title>
 </head>
+<!--HEADER-->
+<header>
+    <!--PROMOCION-->
+    <div class="promo">
+        <h5>Hasta 6 cuotas sin interes</h5>
+        <h5>Retiros gratis en el local</h5>
+    </div>
+    <!--HEADER-->
+    <div class="header">
+        <!-- LOGO -->
+        <a href="../index.html">
+            <img src="../img/icons/game.png" alt="icono de la empresa GC">
+        </a>
+        <!-- TITULO PRINCIPAL -->
+        <a href="../index.html">
+            <h1>LA TABERNA GAMER</h1>
+        </a>
+        <!--BUSQUEDA -->
+        <a id="Busqueda">
+            <div class="busqueda-main">
+                <input class="busqueda-input" type="search" name="search" id="search" placeholder="Buscar Productos">
+                <a href="">
+                    <img src="../img/icons/search.png" alt="busqueda" width="40">
+                </a>
+                </input>
 
-<body>
-    <main>
-        <section id="Carrito_Principal">
-            <section id="Productos_imagenes">
-            </section>
-            <section id="Productos_descripción">
-            </section>
-        </section>
-        <section>
-        </section>
-    </main>
+            </div>
+        </a>
+        <!-- CARRITO SIMBOLO -->
+        <a href="">
+            <i class="carro-2xl fa-solid fa-cart-shopping fa-2xl"></i>
+            <i class="carro-mob fa-solid fa-cart-shopping"></i>
+        </a>
+    </div>
+    <div class="busqueda-mob">
+        <input class="busqueda-input" type="search" name="search" id="search" placeholder="Buscar Productos">
+        <a href="">
+            <img src="../img/icons/search.png" alt="busqueda" width="30">
+        </a>
+    </div>
+    <!--BARRA NAVEGACION PC-->
+    <nav>
+        <div class="ir_arriba_fixed">
+            <a href="../index.html">
+                <img src="../img/icons/inicio.png" alt="ir arriba">
+            </a>
+        </div>
+
+        <ul class="nav-desktop">
+            <li>
+                <a href="../index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="../index.html#Ofertas">Ofertas</a>
+            </li>
+            <li>
+                <a href="productos.html">Productos</a>
+            </li>
+            <li>
+                <a href="../index.html#Mapas">Ubicación</a>
+            </li>
+            <li>
+                <a href="soporte.html">Ayuda</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- BARRA NAVEGACION MOBILE-->
+    <nav>
+        <ul class="nav-mobile">
+            <li>
+                <a href="../index.html"><img src="../img/icons/home.png" alt="home"></a>
+            </li>
+            <li>
+                <a href="#Busqueda"><img src="../img/icons/search.png" alt="search"></a>
+            </li>
+            <li>
+                <a href="../index.html#Mapas"><img src="../img/icons/location.png" alt="donde estamos"></a>
+            </li>
+            <li>
+                <a href="#Productos"><img src="../img/icons/shopping.png" alt="shopping"></a>
+            </li>
+            <li>
+                <a href="soporte.html"><img src="../img/icons/help.png" alt="help"></a>
+            </li>
+        </ul>
+    </nav>
+
+</header>
+
+<main>
+    <!--SLIDER-->
+    <section id="slider">
+        <div class="slider">
+            <img src="../img/banner/main_1600x500.png" alt="imagen principal">
+        </div>
+    </section>
+
+    <!-- CARRITO -->
+    <section id="carrito-principal">
+        <div class="carrito-ruta">
+            <a href="">
+                ruta
+            </a>/
+            <a href="">
+                ruta
+            </a>/
+            <a href="">
+                ruta
+            </a>
+        </div>
+        <div class="carrito-producto">
+            <div class="carrito-card">
+                <ol class="carrito-img-izq">
+                    <li>
+                        <img src="../img/productos/no-image.webp" alt="img1">
+
+                    </li>
+                    <li>
+                        <img src="../img/productos/no-image.webp" alt="img2">
+
+                    </li>
+                    <li>
+                        <img src="../img/productos/no-image.webp" alt="img3">
+
+                    </li>
+                    <li>
+                        <img src="../img/productos/no-image.webp" alt="img4">
+
+                    </li>
+                </ol>
+                <div class="carrito-img-main">
+                    <img src="../img/productos/no-image.webp" alt="carrito imagen principal">
+                </div>
+            </div>
+            <div class="carrito-compra">
+                <h2 class="carrito-titulo">
+                    Teclado Gamer Razer Deathstalker V2 Pro
+                </h2>
+                <div class="carrito-descripcion-precio">
+                    <p class="tachado">
+                        $10000
+                    </p>
+                    <p class="precio">
+                        $9999
+                    </p>
+                </div>
+                <p class="carrito-prod-desc">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, explicabo eum dignissimos,
+                    fugiat velit voluptatum placeat, dicta exercitationem aut labore illo unde ad modi vero expedita est
+                    corrupti deserunt laboriosam.
+                </p>
+                <div class="carrito-compra-btn">
+                    <div class="carrito-compra-btn-cant">
+                        <p>x disponibles</p>
+                        <div class="cantidad-disponible">
+                            <button>
+                                -
+                            </button>
+                            <p>1</p>
+                            <button>
+                                +
+                            </button>
+                        </div>
+                    </div>
+                    <a href="" class="carrito-btn">
+                        <button class="productos-boton">
+                            Comprar
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="carrito-descripcion-expandida">
+            <hr>
+            <h3>Descripción</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt modi dolore corrupti, id ea adipisci,
+                sunt fugiat tempora autem ratione cupiditate iste aliquam ullam expedita nostrum rem illo repellendus
+                inventore.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, dolores! Odit vitae animi, dolorum
+                fugiat numquam voluptate, et blanditiis voluptas maiores enim laborum facere? Architecto sequi
+                consequuntur molestias labore amet?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas veritatis itaque architecto fugit
+                aliquid eaque cupiditate necessitatibus? Nemo, vel? Atque assumenda vitae voluptatibus magni voluptatem
+                labore neque ducimus beatae delectus.
+                Minima earum, nemo reprehenderit odio temporibus magni totam blanditiis, id error cum, doloremque enim
+                distinctio! Fugit expedita numquam laudantium perferendis optio officia labore commodi cumque. Officia
+                sit expedita ipsam accusamus!
+            </p>
+            <hr>
+            <h3>Productos Relacionados</h3>
+            <div class="carrito-cards-relacionados">
+                <ol>
+                    <li><img src="../img/productos/no-image.webp" alt="carrito-relacionado"></li>
+                    <li><img src="../img/productos/no-image.webp" alt="carrito-relacionado"></li>
+                    <li><img src="../img/productos/no-image.webp" alt="carrito-relacionado"></li>
+                    <li><img src="../img/productos/no-image.webp" alt="carrito-relacionado"></li>
+                </ol>
+            </div>
+        </div>
+    </section>
+</main>
+<!--FOOTER-->
+<footer>
+    <div class="footer">
+        <!-- <div class="footer-icon">
+                <h4>La Taberna Gamer</h4>
+                <img src="../img/icons/favicon.ico" alt="icono de la empresa GC">
+            </div> -->
+        <ul class="footer-social">
+            <h4>Seguinos en nuestras redes</h4>
+            <li>
+                <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin-in fa-2xl"></i>
+                    <h6>
+                        Linkedin
+                    </h6>
+                </a>
+            </li>
+            <li>
+                <a href="http://instagram.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-instagram fa-2xl"></i>
+                    <h6>Instagram</h6>
+                </a>
+            </li>
+            <li>
+                <a href="http://facebook.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-facebook fa-2xl"></i>
+                    <h6>Facebook</h6>
+                </a>
+            </li>
+        </ul>
+        <ul class="footer-pago">
+            <li>
+                <h4>Medios de Pago</h4>
+                <img src="../img/icons/tarjetas100.png" alt="pago2">
+            </li>
+        </ul>
+    </div>
+</footer>
 </body>
 
 </html>
