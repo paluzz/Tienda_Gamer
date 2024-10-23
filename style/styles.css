@@ -163,18 +163,23 @@ header {
 .busqueda-main {
     display: flex;
     align-items: center;
+    border-radius: 15px;
+    border: rgba(162, 46, 208, 1) 1px solid;
+    background-color: rgba(162, 46, 208, 0.4);
+    color: white;
 }
 
 
 .busqueda-main input {
     border-radius: 15px 0px 0px 15px;
-    border-color: #a22ed0;
-    padding: 1.2vw 2vw;
+    padding: 1.3vw 2vw;
+    background-color: rgba(162, 46, 208, 0.4);
     font-size: 1.2rem;
+    color: white;
+    border-color: rgba(162, 46, 208, 0.4);
 }
 
 .busqueda-main a img {
-    padding: 1vw 0px;
     border-radius: 2px 15px 15px 2px;
 }
 
@@ -183,14 +188,9 @@ header {
 }
 
 @media (hover:hover) {
-    .busqueda-main a img:hover {
-        background-color: #ee8d48;
-    }
 
-    .busqueda-main input:focus {
-        background-color: rgba(162, 46, 208, 0.4);
+    .busqueda-main input:focus>.busqueda-input a img:hover {
         color: white;
-        /* width: 50vw; */
     }
 }
 
