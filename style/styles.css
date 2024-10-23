@@ -171,12 +171,12 @@ header {
 
 
 .busqueda-main input {
-    border-radius: 15px 0px 0px 15px;
     padding: 1.3vw 2vw;
-    background-color: rgba(162, 46, 208, 0.4);
+    border-radius: 15px 15px 15px;
+    background-color: transparent;
     font-size: 1.2rem;
+    border-color: transparent;
     color: white;
-    border-color: rgba(162, 46, 208, 0.4);
 }
 
 .busqueda-main a img {
@@ -189,10 +189,15 @@ header {
 
 @media (hover:hover) {
 
-    .busqueda-main input:focus>.busqueda-input a img:hover {
-        color: white;
+    .busqueda-main input:focus {
+        border-color: transparent;
     }
 }
+
+:focus-visible {
+    outline: none;
+}
+
 
 /*---------------------------------------------------------------------------------------------------------*/
 /* SLIDER */
