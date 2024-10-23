@@ -13,12 +13,6 @@ Naranja: #ee8d48
     font-family: 'Cascadia Code', monospace, sans-serif;
 }
 
-body {
-    height: 100vh;
-    width: 100vw;
-
-}
-
 h1 {
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
@@ -39,39 +33,13 @@ ol {
     list-style: none;
 }
 
-/*---------------------------------------------------------------------------------------------------------*/
-/* PROMOCION */
-
-.promo {
-    /*hacer animacion de derecha a izquierda y en loop*/
-    background-color: black;
-    color: white;
-    display: flex;
-    overflow: hidden;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.promo h5 {
-    animation: slidein 10s linear infinite;
-}
-
-@keyframes slidein {
-
-    0% {
-        transform: translateX(100vw);
-    }
-
-    100% {
-        transform: translateX(-100vw);
-    }
-}
 
 /*---------------------------------------------------------------------------------------------------------*/
 /*LOGO TITULO CARRITO*/
-header {
+body>header {
+    width: 100%;
     position: absolute;
-    width: 100vw;
+    border: none;
 }
 
 .header {
@@ -83,7 +51,6 @@ header {
 }
 
 .header img {
-    margin-top: 1vh;
     max-width: 10vh;
     width: calc(4vh+4vw);
     cursor: pointer;
@@ -112,10 +79,38 @@ header {
 }
 
 /*---------------------------------------------------------------------------------------------------------*/
+/* PROMOCION */
+
+.promo {
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.promo h5 {
+    animation: slidein 10s linear infinite;
+}
+
+@keyframes slidein {
+
+    0% {
+        transform: translateX(100vw);
+    }
+
+    100% {
+        transform: translateX(-100vw);
+    }
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
 /* NAVEGACION */
 
 .nav-desktop {
-    font-size: calc(1vh + 1vw);
+    font-size: calc(2em - 1vw);
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -204,10 +199,12 @@ header {
     background: black;
     position: relative;
     z-index: -1;
+    display: flex;
+    border: none;
 }
 
 .slider img {
-    width: 100vw;
+    max-width: 100%;
 }
 
 
