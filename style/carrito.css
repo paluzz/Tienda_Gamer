@@ -31,7 +31,7 @@ hr {
 
 .carrito-img-izq {
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     display: flex;
 }
 
@@ -53,6 +53,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
 }
 
 .carrito-img-main img {
@@ -138,4 +139,28 @@ hr {
 
 .carrito-cards-relacionados ol li img {
     width: 150px;
+}
+
+
+@media only screen and (width<=780px) {
+    .carrito-producto {
+        flex-direction: column;
+    }
+
+    /* PARTE IZQUIERDA */
+    .carrito-card {
+        gap: 5px;
+    }
+
+    .carrito-img-izq li {
+        margin: 0 0 2px 0;
+    }
+
+    .carrito-img-main img {
+        max-width: 60vw;
+    }
+
+    .carrito-cards-relacionados ol li img {
+        width: 120px;
+    }
 }
