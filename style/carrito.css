@@ -35,13 +35,28 @@ hr {
     display: flex;
 }
 
+.carrito-img-izq li {
+    background-color: #ddd;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .carrito-img-izq img {
+    display: flex;
     width: 100px;
 }
 
+.carrito-img-main {
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .carrito-img-main img {
-    width: 300px;
-    height: 100%;
+    max-width: 300px;
 }
 
 /* PARTE DERECHA */
@@ -116,10 +131,11 @@ hr {
 
 .carrito-cards-relacionados ol {
     display: flex;
+    overflow-x: scroll;
     flex-direction: row;
-    gap: 20px
+    gap: 20px;
 }
 
-.carrito-cards-relacionados>img {
-    max-width: 40px;
+.carrito-cards-relacionados ol li img {
+    width: 150px;
 }
