@@ -37,10 +37,12 @@ hr {
 
 .carrito-img-izq li {
     background-color: #ddd;
+    border-radius: 10px;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .carrito-img-izq img {
@@ -49,6 +51,7 @@ hr {
 }
 
 .carrito-img-main {
+    border-radius: 10px;
     background-color: #ddd;
     display: flex;
     justify-content: center;
