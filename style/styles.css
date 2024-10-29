@@ -729,10 +729,7 @@ footer {
 }
 
 @media only screen and (width<=1024px) {
-
     .busqueda-main input {
         padding: 1.2vw 1.5vw;
     }
-
-
 }
