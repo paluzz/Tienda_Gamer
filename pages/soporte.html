@@ -115,21 +115,72 @@
         <!--CONTACTO-->
         <section id="Contacto">
             <div class="form-box">
-                <div class="form-izq"></div>
-                <div class="contacto form-der">
-                    <!-- Formspree para recibir los correos al hacer submit-->
-                    <form action="https://formspree.io/f/xvgopvaq" method="POST">
-                        <legend class="subtitulos">Contactanos</legend>
-                        <label class="nombre" for="nombre">Nombre</label>
-                        <input class="nombre-input" name="nombre" id="nombre" type="text" placeholder="Juan.. Pedro..">
-                        <label class="email" for="email">Email</label>
-                        <input class="email-input" type="email" placeholder="pepito@gmail...">
-                        <label class="mensaje" for="mensaje">Mensaje:</label>
-                        <textarea class="mensaje-input" name="mensaje" placeholder="Tengo un problema..." rows="4"
-                            cols="20"></textarea>
-                        <input class="enviar" type="submit" value="Enviar">
-                    </form>
+                <div class="form-izq">
+                    <h2>INFORMACIÓN DE CONTACTO</h2>
+                    <div class="form-izq-text">
+                        <h5> <i class="fa-solid fa-location-dot"></i> Av. Gaona 2100</h5>
+                        <p><i class="fa-regular fa-clock"></i> Lunes a viernes 8:00 a 22:00hs</p>
+                        <p> Sabados 9:00 a 13:00hs</p>
+                        <p><i class="fa-solid fa-phone"></i> 0800 123 4567</p>
+                        <a href="mailto:TiendaGamer@gmail.com">
+                            <i class="fa-solid fa-envelope"></i>
+                            TiendaGamer@gmail.com
+                        </a>
+                        <hr>
+                        <p class="consulta">Tambien puedes consultarnos en nuestras redes sociales</p>
+                    </div>
+                    <div class="form-social">
+                        <ul class="redes">
+                            <li class="icon facebook">
+                                <span class="tooltip">Facebook</span>
+                                <a href="http://facebook.com" target="_blank" rel="noopener noreferrer">
+
+                                    <span><i class="fab fa-facebook-f"></i></span>
+                                </a>
+                            </li>
+                            <li class="icon twitter">
+                                <span class="tooltip">Twitter</span>
+                                <span><i class="fab fa-twitter"></i></span>
+                            </li>
+                            <li class="icon instagram">
+                                <span class="tooltip">Instagram</span>
+                                <span><i class="fab fa-instagram"></i></span>
+                            </li>
+                            <li class="icon linkedin">
+                                <span class="tooltip">Linkedin</span>
+                                <span><i class="fab fa-linkedin"></i></span>
+                            </li>
+                            <li class="icon whatsapp">
+                                <span class="tooltip">Whatsapp</span>
+                                <span><i class="fab fa-whatsapp"></i></span>
+                            </li>
+                            <li class="icon telegram">
+                                <span class="tooltip">Telegram</span>
+                                <span><i class="fab fa-telegram"></i></span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+
+                <!-- Formspree para recibir los correos al hacer submit-->
+                <form class="form-der" action="https://formspree.io/f/xvgopvaq" method="POST">
+                    <legend>Envianos un Mensaje</legend>
+                    <div class="form-der-input">
+                        <label class="nombre label" for="nombre">Nombre</label>
+                        <input class="nombre-input input" name="nombre" id="nombre" type="text"
+                            placeholder="Juan.. Pedro..">
+                        <label class="email label" for="email">Correo Electrónico</label>
+                        <input class="email-input input" type="email" placeholder="pepito@gmail...">
+                        <label class="telefono label" for="telefono">Telefono</label>
+                        <input class="telefono-input input" name="telefono" id="telefono" type="tel"
+                            placeholder="Juan.. Pedro..">
+                        <label class="mensaje label" for="mensaje">Mensaje:</label>
+                        <textarea class="mensaje-input input" name="mensaje" placeholder="Tengo un problema..." rows="5"
+                            cols="30"></textarea>
+                        <input class="enviar" type="submit" value="Enviar">
+                    </div>
+                </form>
+
             </div>
         </section>
     </main>
