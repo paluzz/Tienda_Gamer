@@ -1,0 +1,66 @@
+/*---------------------------------------------------------------------------------------------------------*/
+/* CONTACTO */
+.contacto {
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+form {
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto repeat(6, auto) auto;
+    display: grid;
+    gap: 15px;
+}
+
+textarea {
+    resize: none;
+}
+
+.contacto legend {
+    font-size: 3vh;
+    grid-column: 2/6;
+}
+
+.nombre,
+.email,
+.mensaje {
+    font-size: 2vh;
+    -webkit-text-stroke: 0.1vh #a22ed0;
+    grid-column: 3/4;
+}
+
+.nombre-input,
+.email-input,
+.mensaje-input {
+    padding: 5px 10px;
+    grid-column: 3/6;
+    border-color: rgba(162, 46, 208, 0.6);
+    border-radius: 5px;
+}
+
+.enviar {
+    grid-column: 3/6;
+    border-radius: 10px;
+    padding: 10px 40px;
+    background-color: rgba(162, 46, 208, 0.6);
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+@media (hover:hover) {
+
+    .enviar:hover {
+        background-color: #a22ed0;
+        color: white;
+    }
+
+    .nombre-input:focus,
+    .email-input:focus,
+    .mensaje-input:focus {
+        border-color: #a22ed0;
+        background-color: rgba(162, 46, 208, 0.4);
+    }
+}

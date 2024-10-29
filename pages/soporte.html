@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/c8cd31a5bc.js" crossorigin="anonymous"></script>
     <!--ESTILOS-->
     <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="../style/contacto.css">
     <!--FUENTES TEXTO -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -113,19 +114,22 @@
         </section>
         <!--CONTACTO-->
         <section id="Contacto">
-            <div class="contacto">
-                <!-- Formspree para recibir los correos al hacer submit-->
-                <form action="https://formspree.io/f/xvgopvaq" method="POST">
-                    <legend class="subtitulos">Contactanos</legend>
-                    <label class="nombre" for="nombre">Nombre</label>
-                    <input class="nombre-input" name="nombre" id="nombre" type="text" placeholder="Juan.. Pedro..">
-                    <label class="email" for="email">Email</label>
-                    <input class="email-input" type="email" placeholder="pepito@gmail...">
-                    <label class="mensaje" for="mensaje">Mensaje:</label>
-                    <textarea class="mensaje-input" name="mensaje" placeholder="Tengo un problema..." rows="4"
-                        cols="20"></textarea>
-                    <input class="enviar" type="submit" value="Enviar">
-                </form>
+            <div class="form-box">
+                <div class="form-izq"></div>
+                <div class="contacto form-der">
+                    <!-- Formspree para recibir los correos al hacer submit-->
+                    <form action="https://formspree.io/f/xvgopvaq" method="POST">
+                        <legend class="subtitulos">Contactanos</legend>
+                        <label class="nombre" for="nombre">Nombre</label>
+                        <input class="nombre-input" name="nombre" id="nombre" type="text" placeholder="Juan.. Pedro..">
+                        <label class="email" for="email">Email</label>
+                        <input class="email-input" type="email" placeholder="pepito@gmail...">
+                        <label class="mensaje" for="mensaje">Mensaje:</label>
+                        <textarea class="mensaje-input" name="mensaje" placeholder="Tengo un problema..." rows="4"
+                            cols="20"></textarea>
+                        <input class="enviar" type="submit" value="Enviar">
+                    </form>
+                </div>
             </div>
         </section>
     </main>
