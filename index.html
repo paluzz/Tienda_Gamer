@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="./fonts/CascadiaCodePL.ttf">
     <link rel="stylesheet" href="./fonts/CascadiaCode.ttf">
     <!--JAVASCRIPT-->
+
+    <script src="./scripts/carrito.js"></script>
+
     <title>La mejor tecnología</title>
 </head>
 
@@ -117,75 +120,6 @@
         <section id="Ofertas">
             <!-- <h2 class="subtitulos">Lo Mas Vendido</h2> -->
             <ol class="productos">
-                <li class="productos-card">
-                    <div class="productos-img">
-                        <img src="img/productos/teclado gamer razer deathstalker v2 pro.png" alt="oferta-1">
-                    </div>
-                    <br></br>
-                    <h4 class="productos-nombre">
-                        <a href="pages/carrito.html">
-                            Teclado Gamer Razer Deathstalker V2 Pro
-                        </a>
-                    </h4>
-                    <div class="productos-descuento">
-                        <h5>$580.000</h5>
-                        <h6>25% OFF</h6>
-                        <p>$434.999</p>
-                    </div>
-                    <h5 class="productos-cuotas">Mismo precio en 12 cuotas de $58.000</h5>
-                    <a href="pages/carrito.html">
-                        <button class="productos-boton">
-                            Comprar
-                        </button>
-                    </a>
-                </li>
-                <li class="productos-card">
-                    <div class="productos-img">
-                        <img src="img/productos/Notebook_Asus_Core_I3_Ultrabook_8gb.png" alt="oferta-2">
-                    </div>
-                    <br></br>
-                    <h4 class="productos-nombre">
-                        <a href="pages/carrito.html">
-                            Notebook Asus Core I3 Ultrabook 8gb 15.6 + Ssd 480gb
-                        </a>
-                    </h4>
-                    <div class="productos-descuento">
-                        <h5>$1.100.000</h5>
-                        <h6>27% OFF</h6>
-                        <p>$793.499</p>
-                    </div>
-                    <h5 class="productos-cuotas">Mismo precio en 6 cuotas de
-                        $
-                        132.249</h5>
-                    <a href="pages/carrito.html">
-                        <button class="productos-boton">
-                            Comprar
-                        </button>
-                    </a>
-                </li>
-                <li class="productos-card">
-                    <div class="productos-img">
-                        <img src="img/productos/Pc Armada Gamer Amd Ryzen 3 3200g 16gb 480gb Ssd Kit.png"
-                            alt="oferta-3">
-                    </div>
-                    <br></br>
-                    <h4 class="productos-nombre">
-                        <a href="pages/carrito.html">
-                            Pc Armada Gamer Amd Ryzen 3 3200g 16gb 480gb Ssd Kit
-                        </a>
-                    </h4>
-                    <div class="productos-descuento">
-                        <h5>$441.460</h5>
-                        <h6>18% OFF</h6>
-                        <p>$359.999</p>
-                    </div>
-                    <h5 class="productos-cuotas">Mismo precio en 6 cuotas de $67.995</h5>
-                    <a href="pages/carrito.html">
-                        <button class="productos-boton">
-                            Comprar
-                        </button>
-                    </a>
-                </li>
             </ol>
 
         </section>
@@ -226,7 +160,7 @@
         <section id="Destacados">
             <!-- <h2 class="subtitulos">TODO PARA EL GAMER</h2> -->
             <ol class="productos">
-                <li class="productos-card">
+                <!-- <li class="productos-card">
                     <div class="productos-img">
                         <img src="img/productos/teclado gamer razer deathstalker v2 pro.png" alt="oferta-1">
                     </div>
@@ -294,7 +228,7 @@
                             Comprar
                         </button>
                     </a>
-                </li>
+                </li> -->
             </ol>
         </section>
 
@@ -351,6 +285,13 @@
                     </iframe>
                 </div>
         </section>
+        <!-- CARRITO -->
+        <div id="Carrito">
+            <h2>Carrito de Compras</h2>
+            <ul id="lista-carrito"></ul>
+            <button id="vaciar-carrito">Vaciar Carrito</button>
+        </div>
+
     </main>
     <!--FOOTER-->
     <footer>
@@ -386,6 +327,7 @@
             </ul>
         </div>
     </footer>
+    <script src="./scripts/scripts.js"></script>
 </body>
 
 </html>
