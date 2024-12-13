@@ -171,7 +171,6 @@ function producto(prod, cant = 3) {
         ol[j].appendChild(fragment);
     }
 
-    console.log(ol);
     return ol;
 }
 
