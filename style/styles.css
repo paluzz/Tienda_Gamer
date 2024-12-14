@@ -262,6 +262,8 @@ body>header {
 }
 
 .productos-card img {
+    max-width: 80%;
+    height: 130px;
     max-height: 22vh;
     margin: 20px 0px 0px 0px;
 }
@@ -301,8 +303,8 @@ body>header {
 }
 
 .hot h6 {
-    background-color: red;
     color: white;
+    background-color: red;
 }
 
 .productos-descuento p {
@@ -315,7 +317,8 @@ body>header {
 }
 
 
-.productos-boton {
+.productos-boton,
+.productos-btn {
     display: inline-block;
     border: none;
     outline: none;
@@ -345,7 +348,8 @@ body>header {
         transition: all ease 0.4s;
     }
 
-    .productos-boton:hover {
+    .productos-boton:hover,
+    .productos-btn:hover {
         background-color: rgba(162, 46, 208, 1);
         border-color: black;
     }
@@ -581,7 +585,8 @@ footer {
         font-size: 3vw;
     }
 
-    .productos-boton {
+    .productos-boton,
+    .productos-btn {
         font-size: 2.6vw;
     }
 

@@ -61,6 +61,7 @@ hr {
 
 .carrito-img-main img {
     max-width: 300px;
+    width: 300px;
 }
 
 /* PARTE DERECHA */
@@ -143,6 +144,7 @@ hr {
 .carrito-cards-relacionados ol li img {
     width: 150px;
 }
+
 
 
 @media only screen and (width<=780px) {

@@ -15,8 +15,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./fonts/CascadiaCodePL.ttf">
-    <link rel="stylesheet" href="./fonts/CascadiaCode.ttf">
+    <link rel="stylesheet" href="../fonts/CascadiaCodePL.ttf">
+    <link rel="stylesheet" href="../fonts/CascadiaCode.ttf">
     <!--JAVASCRIPT-->
     <script src="../scripts/contador.js"></script>
     <title>La mejor tecnología</title>
@@ -121,60 +121,40 @@
     <!-- CARRITO -->
     <section id="carrito-principal">
         <div class="carrito-ruta">
-            <a href="">
-                ruta
-            </a>/
-            <a href="">
-                ruta
-            </a>/
-            <a href="">
+            <a href="../index.html">
+                inicio
+            </a> /
+            <!-- prod[i].componente (perifericos, juegos,electrodomesticos,etc)-->
+            <a href="#" id="ruta-tipo">
+
+            </a> /
+            <!-- deberiamos agregar un prod[i].type (teclado,mouse,etc) -->
+            <a href="#" id="ruta-especifico">
                 ruta
             </a>
         </div>
         <div class="carrito-producto">
             <div class="carrito-card">
                 <ol class="carrito-img-izq">
-                    <li>
-                        <img src="../img/productos/teclado_0.png" alt="img1">
 
-                    </li>
-                    <li>
-                        <img src="../img/productos/teclado_1.png" alt="img2">
-
-                    </li>
-                    <li>
-                        <img src="../img/productos/teclado_2.png" alt="img3">
-
-                    </li>
-                    <li>
-                        <img src="../img/productos/teclado gamer razer deathstalker v2 pro.png" alt="img4">
-
-                    </li>
                 </ol>
                 <div class="carrito-img-main">
-                    <img src="../img/productos/teclado_0.png" alt="carrito imagen principal">
                 </div>
             </div>
             <div class="carrito-compra">
                 <h2 class="carrito-titulo">
-                    Teclado Gamer Razer Deathstalker V2 Pro
                 </h2>
                 <div class="carrito-descripcion-precio">
-                    <p class="tachado">
-                        $10000
+                    <p class="tachado producto-precio-tachado">
                     </p>
-                    <p class="precio">
-                        $9999
+                    <p class="precio producto-precio">
                     </p>
                 </div>
                 <p class="carrito-prod-desc">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, explicabo eum dignissimos,
-                    fugiat velit voluptatum placeat, dicta exercitationem aut labore illo unde ad modi vero expedita est
-                    corrupti deserunt laboriosam.
                 </p>
                 <div class="carrito-compra-btn">
                     <div class="carrito-compra-btn-cant">
-                        <p id="disponibles">4 disponibles</p>
+                        <p id="disponibles"></p>
                         <div class="cantidad-disponible">
                             <button id="quitar">
                                 -
@@ -186,7 +166,7 @@
                         </div>
                     </div>
                     <a href="" class="carrito-btn">
-                        <button class="productos-boton">
+                        <button class="productos-btn">
                             Comprar
                         </button>
                     </a>
@@ -194,38 +174,8 @@
             </div>
         </div>
         <div class="carrito-descripcion-expandida">
-            <hr>
-            <h3>Descripción</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt modi dolore corrupti, id ea adipisci,
-                sunt fugiat tempora autem ratione cupiditate iste aliquam ullam expedita nostrum rem illo repellendus
-                inventore.
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, dolores! Odit vitae animi, dolorum
-                fugiat numquam voluptate, et blanditiis voluptas maiores enim laborum facere? Architecto sequi
-                consequuntur molestias labore amet?
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas veritatis itaque architecto fugit
-                aliquid eaque cupiditate necessitatibus? Nemo, vel? Atque assumenda vitae voluptatibus magni voluptatem
-                labore neque ducimus beatae delectus.
-                Minima earum, nemo reprehenderit odio temporibus magni totam blanditiis, id error cum, doloremque enim
-                distinctio! Fugit expedita numquam laudantium perferendis optio officia labore commodi cumque. Officia
-                sit expedita ipsam accusamus!
-            </p>
-            <hr>
-            <h3>Productos Relacionados</h3>
-            <div class="carrito-cards-relacionados">
-                <ol>
-                    <li><img src="../img/productos/no-image.webp" alt="carrito-relacionado"></li>
-                    <li><img src="../img/productos/no-image.webp" alt="carrito-relacionado"></li>
-                    <li><img src="../img/productos/no-image.webp" alt="carrito-relacionado"></li>
-                    <li><img src="../img/productos/no-image.webp" alt="carrito-relacionado"></li>
-                    <li><img src="../img/productos/no-image.webp" alt="carrito-relacionado"></li>
-                    <li><img src="../img/productos/no-image.webp" alt="carrito-relacionado"></li>
-                    <li><img src="../img/productos/no-image.webp" alt="carrito-relacionado"></li>
-                    <li><img src="../img/productos/no-image.webp" alt="carrito-relacionado"></li>
-                </ol>
-            </div>
+
+
         </div>
     </section>
 </main>
@@ -267,6 +217,7 @@
         </ul>
     </div>
 </footer>
+<script src="../scripts/scripts.js"></script>
 </body>
 
 </html>
