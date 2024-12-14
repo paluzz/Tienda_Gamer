@@ -249,11 +249,10 @@ body>header {
     box-shadow: 5px 8px 5px 3px rgba(0, 0, 0, 0.6);
     position: relative;
     padding-bottom: 6vh;
-    max-width: 300px;
+    max-width: 250px;
     /* flex: 0.5 1 50px;*/
     flex-grow: 0.5;
     flex-shrink: 1;
-    flex-basis: 200px;
     flex-flow: row;
     box-sizing: border-box;
     text-align: center;
