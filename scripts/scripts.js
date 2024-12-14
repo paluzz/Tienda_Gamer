@@ -153,7 +153,7 @@ const prod = [
             '1396tZCZniG56IxWH4JkAdjpspS3AFQLD',
             '1kJ7Hi7Q1DnyJ6AvltqmUj8x1Kb6EySgS'
         ],
-        precio: ["39.899", "69.999", "43"],
+        precio: ["39.890", "69.990", "43"],
         disponibles: 10,
         descripcion: [
             "Razer Kraken V3 X Auriculares USB con cable para juegos: construcción ligera, controladores Triforce de 1.575 in, micrófono cardioide HyperClear, sonido envolvente 7.1, iluminación Chroma RGB",
@@ -177,7 +177,7 @@ const prod = [
             '13Er7-HtUTevqgkphXERhPeg3dTHUG1Y2',
             '1nwMSThsf1w2F3u-F22BirhR_Eq69rgc4'
         ],
-        precio: ["39.899", "69.999", "43"],
+        precio: ["39.890", "69.990", "43"],
         disponibles: 12,
         descripcion: [
             " Mouse ergonómico personalizable para juegos: el interruptor de mouse para juegos más rápido - Iluminación Chroma RGB - Sensor óptico de 26K DPI - 11 botones programables"
@@ -224,7 +224,7 @@ const prod = [
             '1XV4WcyeGLMBlA8LS_2NgntJtrnbkRN2b',
             '1fbBXLl8FhPpaltzeT4ytggKzpNOOE-U2'
         ],
-        precio: ["119.990", "149.999", "20"],
+        precio: ["119.990", "149.990", "20"],
         disponibles: 6,
         descripcion: [
             "HOFFREE Silla de juegos de masaje para niños, silla de videojuegos con reposapiés y soporte lumbar, silla reclinable de juegos de PC con reposacabezas para sala de juegos, azul y negro"
@@ -247,7 +247,7 @@ const prod = [
             '1ye3hKKrYRUwuVSbuGuwE28SLnva9dFVt',
             '16-hITPXhPajQXiSdtARtqbDHMtQUAwDW'
         ],
-        precio: ["999.999", "1.149.999", "13"],
+        precio: ["999.990", "1.149.990", "13"],
         disponibles: 4,
         descripcion: [
             "Acer Predator Helios Neo 16 Laptop de juegos, Intel Core i7-13650HX NVIDIA GeForce RTX 4060, pantalla 16 in., WUXGA 1920x1200 165 Hz G-SYNC, 16 GB DDR5 SSD 512 GB Gen 4, Killer wifi 6E PHN16-71- 76H5"
@@ -265,6 +265,124 @@ const prod = [
             "Puertos para todos los accesorios: 2 puertos USB tipo C USB 3.2 Gen 2 (hasta 10 Gbps), DisplayPort a través de USB tipo C, Thunderbolt 4 y carga USB, 1 puerto USB 3.2 Gen 2 (con carga de apagado), 1 puerto USB 3.2 Gen 2, 1 puerto USB 3.2 Gen 1, 1 HDMI 2.1 con soporte HDCP. 1 ethernet (RJ-45), 1 conector de salida de audífonos/altavoz, 1 entrada CC para adaptador de CA, 1 ranura de bloqueo Kensington. El tamaño adecuado: 14.18 pulgadas de ancho x 11.02 pulgadas de profundidad x 1.05/1.11 pulgadas de alto, 2.5 kg. Batería de iones de litio de 90 vatios"
         ],
         categoria: ["computadoras", "notebook"]
+    },
+    {
+        id: "11",
+        nombre: "BENGOO G9000",
+        img: [
+            '17UOwtcll1BRmO3KU7Bs-jzrnhm7ggMHb',
+            '1_jl9tdt1WYqRv9edVkYfiGvsV3RVBFXq',
+            '13rKxdolwD5Azz8GvE7KW32oEsHTTn_6a',
+            '1odef8GzsqADrq_nCX7yHVPDlYt0lrsk8'
+        ],
+        precio: ["23.990", "35.990", "33"],
+        disponibles: 4,
+        descripcion: [
+            "Acer Nitro V Laptop para juegos | Procesador Intel Core i5-13420H | GPU NVIDIA GeForce RTX 4050 para portátil | Pantalla FHD IPS de 15.6 pulgadas de 144 Hz | DDR5 de 8 GB | SSD de 512 GB Gen 4 | WiFi"
+        ],
+        descripcion_larga: [
+            "Más allá del rendimiento: potencia tu juego y creatividad con la Nitro V 15, combinando un procesador Intel Core i5 - 13420H de 13ª generación con la GPU para portátil NVIDIA GeForce RTX 4050",
+            'Imagen perfecta.Furiosamente rápido: vea cómo se desarrollan sus conquistas digitales en vibrante Full HD en una pantalla de 15, 6", perfectamente sincronizada a una velocidad de actualización rápida de 144Hz y una amplia relación de aspecto de 16: 9 que proporciona una relación pantalla - cuerpo del 82, 64 %.',
+            "Manténgase conectado: su santuario de juegos está donde quiera que esté. ¿En el sofá ? Acomódese con Wi - Fi rápido y estable 6. ¿Café de juegos ? Obtenga una ventaja en línea con Gigabit Ethernet.No importa tu ubicación, Nitro V 15 garantiza que siempre estés en el asiento del conductor.",
+            "Thunderbolt 4: Con el potente puerto Thunderbolt 4, tiene la trifecta de carga de energía y transferencia de datos con movimiento bidireccional y visualización de video en una sola interfaz.",
+            "Enfriado a la perfección: Manténgase fresco en medio de las galaxias de juego más feroces, gracias a los innovadores ventiladores duales de Nitro V 15 y al eficaz sistema de escape.",
+            "Siempre ser escuchado y visto: experimente una comunicación nítida con la tecnología de reducción de ruido Acer PurifiedView y PurifiedVoice impulsada por IA.Te sentirás como si estuvieras en el centro de comando de una nave espacial, con una precisión de sonido definida que te da la ventaja en tus escaramuzas de juego.",
+            "Sin límites con NitroSense: canaliza a tu estratega de juegos interno con la aplicación de utilidad NitroSense.Ajusta tu configuración de juego para que coincida con tu estilo, ya sea ajustando la velocidad del ventilador para esas batallas acaloradas o personalizando la iluminación para una exploración inmersiva",
+            "Puertos para todos sus accesorios: 1 - Puerto USB tipo C USB 3.2 Gen 2(hasta 10 Gbps) DisplayPort a través de USB tipo C, Thunderbolt 4 y carga USB, 1 puerto USB 3.2 Gen 2(con carga de apagado), 2 puertos USB 3.2 Gen 1, 1 puerto HDMI 2.1 con soporte HDCP, 1 - auriculares / altavoz er / Jack de salida de línea, 1 - Ethernet(RJ - 45), entrada de CC para adaptador de CA",
+            "El ajuste correcto: 14.26 pulgadas de ancho x 9.44 pulgadas de profundidad x 0.93 / 1.06 pulgadas de alto; 4.66 libras."
+        ],
+        categoria: ["perifericos", "audifonos"]
+    },
+    {
+        id: "12",
+        nombre: "Acer Nitro V Laptop",
+        img: [
+            '1bDTjOc-LNHDZXgPO0WDFzwgjIJnxHyOK',
+            '1_S9acSCYDvOxUF7urnRiPLpYzmd-ywrP',
+            '1h-mFoUXtd-JOARnPuEvcw7HibxAC060S',
+            '1jn7y0QNeCXIFcA7NeywvLgrK5H5cYf08'
+        ],
+        precio: ["649.990", "799.990", "17"],
+        disponibles: 4,
+        descripcion: [
+            "BENGOO G9000 Auriculares estéreo para juegos para PS4 PC, Xbox One PS5, cancelación de ruido sobre la oreja auriculares con micrófono, luz LED, sonido envolvente de graves, orejeras de memoria suave"
+        ],
+        descripcion_larga: [
+            "Compatible con múltiples plataformas: compatible con PlayStation 4, nueva Xbox One, PC, Nintendo 3DS, laptop, PSP, tableta, iPad, computadora, teléfono móvil. Tenga en cuenta que necesita un adaptador Microsoft adicional (no incluido) cuando se conecta con un controlador Xbox One versión antigua.",
+            "Subwoofer estéreo envolvente: sonido claro que funciona con latón fuerte, espléndido aislamiento de ruido ambiental y controlador de neodimio magnético de alta precisión de 1.575 pulgadas, precisión de posicionamiento acústico mejora la sensibilidad de la unidad de altavoz, lo que te ofrece un campo de sonido vívido, claridad de sonido, sonido de sensación de impacto. Perfecto para varios juegos como Halo 5 Guardians, Metal Gear Solid, Call of Duty, Star Wars Battlefront, Overwatch, World of Warcraft, etc.",
+            "Micrófono de aislamiento de ruido: el micrófono onmi-direccional integrado con auriculares puede transmitir comunicación de alta calidad con su función de detección de ruido premium, puede captar sonidos con gran sensibilidad y eliminar el ruido, lo que te permite entregar o recibir mensajes claramente mientras estás en un juego. Diseño de micrófono flexible largo muy conveniente para ajustar el ángulo del micrófono.",
+            "Gran diseño humanizado: almohadillas de proteína de permeabilidad al aire superior, cómodas y de buena permeabilidad al aire, viga de cabeza de múltiples puntos, cuerda de cuerda con especificaciones de ingeniería del cuerpo humano que puede reducir la discapacidad auditiva y el sudor térmico. Material de cuero respetuoso con la piel para un período de uso más prolongado. Las luces LED deslumbrantes están diseñadas en los auriculares para resaltar la atmósfera del juego.",
+            "Control de volumen sin esfuerzo: cable USB trenzado de alta resistencia a la tracción, antienrollamiento con controlador de volumen giratorio y silencio de micrófono de tecla, evita eficazmente que el cable de 49 pulgadas de largo se enrosque y te permite controlar el volumen fácilmente y silenciar el micrófono como control de volumen sin esfuerzo con una tecla."
+        ],
+        categoria: ["computadoras", "laptop"]
+    },
+    {
+        id: "13",
+        nombre: "Razer BlackShark V2",
+        img: [
+            '1Tb25kA1aP8uP3ZcGVwkOsHCkAvL_msKb',
+            '10nZCT9UM6YcnbX1GIfzxiK_oJxUWV6gD',
+            '1GFgQnBIT40mMESV1plKrZWZ8vRDFvakW',
+            '1hWzSzgcRNjkCibP9ogETayVG2YvO7kn0'
+        ],
+        precio: ["39.990", "59.990", "33"],
+        disponibles: 8,
+        descripcion: [
+            "Razer BlackShark V2 X Auriculares para gamer: sonido envolvente 7.1, controladores de 1.9 ″, almohadillas de espuma viscoelástica, para computador, PS4, PS5 o Switch con conector de 3.5 mm"
+        ],
+        descripcion_larga: [
+            "Cancelación pasiva avanzada del ruido: las cazoletas cerradas resistentes cubren completamente las orejas para evitar que el ruido entre en los auriculares, y sus almohadillas proporcionan un sellado más prieto para aislar más del ruido.",
+            "Compatibilidad con diversas plataformas: funciona con computadoras, Mac, PS4, Xbox One y Nintendo Switch a través de conector Jack de 3.5 mm; disfrutarás de mejor audio en casi todas las plataformas. *Es posible que se requiera un adaptador estéreo para Xbox One; comprar por separado.",
+            "Diseño ligero y almohadillas de espuma transpirables para las orejas: tan solo 8.47 oz; los BlackShark V2X están diseñados desde cero para proporcionarte la máxima comodidad.",
+            "Micrófono cardioide Hyperclear: el patrón de captación mejorado garantiza más voz y menos ruido, ya que se estrecha hacia la parte trasera y los lados del micrófono.",
+            "Sonido envolvente 7.1 para audio posicional: equipados con controladores personalizados de 1.97 pulgadas; admiten sonido envolvente habilitado por software (solo disponible para Windows 10 de 64 bits)."
+        ],
+        categoria: ["perifericos", "audifonos"]
+    },
+    {
+        id: "14",
+        nombre: "Silla Gamer ONEGAME",
+        img: [
+            '1X1JORZasM08P5TjPRBpnZ7lNLQ_bBiUD',
+            '1Fey4moL4W10UgxEzHOkNVQQVNvYcFtR5',
+            '1h5uUqdVwpEGK56tV_YfLoq1j1jVCa_sm',
+            '1aMH84wzaSmVZk74RnNer8UmCfk1d3Zhl'
+        ],
+        precio: ["179.990", "0", "0"],
+        disponibles: 3,
+        descripcion: [
+            "OneGame Silla ergonómica para videojuegos, silla de videojuegos de respaldo alto, silla de juego de altura ajustable con respaldo ajustable"
+        ],
+        descripcion_larga: [
+            "[Diseño ergonómico] La espuma de alta densidad se utiliza como acolchado en la silla de juego para una experiencia de asiento más cómoda, y también tiene un reposacabezas flexible y almohadas lumbares para darte un excelente apoyo para el cuello y la espalda.",
+            "Múltiples ajustes: el respaldo de la silla de juego se puede inclinar entre 90º y 135º para garantizar tu comodidad durante sesiones de trabajo y juego prolongadas. Además, la función de ajuste de altura te permite encontrar la altura ideal tanto para trabajar como para jugar.",
+            "[Reposabrazos de conexión] Esta silla de juego cuenta con un reposabrazos articulado acolchado con espuma de alta densidad y un reposabrazos de enlace de este tipo se puede mover con el respaldo ajustable para apoyar mejor tu codo o brazo.",
+            "Ruedas suaves: las ruedas de rotación de 360º de nuestra silla de juego pueden deslizarse suavemente con poco ruido y también se pueden mover en la mayoría de los pisos sin causar daños a tu suelo.",
+            "[Fácil de instalar] Nuestra silla de juego está equipada con un manual de instalación claro y las herramientas que necesitas para montar."
+        ],
+        categoria: ["accesorios", "sillas"]
+    },
+    {
+        id: "15",
+        nombre: "CyberPowerPC Game Master PC",
+        img: [
+            '10DaG1Op29ZVyh6FX9tC96Kow7f08Gizo',
+            '1yy7XcZZhHYfqQCRCIJA1-_X7AUc5CXkk',
+            '1JDWtucyQxSdfqqAgpGDppdhP7ldaHtUN',
+            '1zsoi0HTgDZBIbpxr3e8w5Bn8fG8OB_NW'
+        ],
+        precio: ["1.099.990", "0", "0"],
+        disponibles: 2,
+        descripcion: [
+            "CyberPowerPC Gamer Master Gaming PC, AMD Ryzen 7 8700F 4.1GHz, GeForce RTX 4060 Ti 8GB, 16GB DDR5, 1TB PCIe Gen4 SSD, WiFi Ready y Windows 11 Home (GMA2900A)"
+        ],
+        descripcion_larga: [
+            "Sistema: AMD Ryzen 7 8700F 4.1GHz 8 núcleos | Chipset AMD B650 | DDR5 de 16 GB | SSD PCIe Gen4 NVMe de 1 TB | Windows 11 Home de 64 bits",
+            "Gráficos: NVIDIA GeForce RTX 4060 Ti 8GB Gráficos | 1x HDMI | 2x DisplayPort",
+            "Conectividad: 5 x USB 3.1 | 4 x USB 2.0 | 1 x LAN 1G | WiFi 5 | Bluetooth 4.2 | Audio de 7.1 canales | Teclado y ratón",
+            "Panel de caja lateral templado | Iluminación RGB personalizada"
+        ],
+        categoria: ["computadoras", "escritorio"]
     },
 ]
 
@@ -511,9 +629,9 @@ function crearPagVenta(prod, id) {
 
     // nombre precio y caracteristicas prod
     titulo.textContent = producto.nombre
-    precio.textContent = producto.precio[0]
+    precio.textContent = "$" + producto.precio[0]
     if (producto.precio[1] != 0) {
-        original.textContent = producto.precio[1]
+        original.textContent = "$" + producto.precio[1]
     }
     descripcion.textContent = producto.descripcion // debemos crear ul>li
     disponibles.textContent = producto.disponibles + " disponibles"
