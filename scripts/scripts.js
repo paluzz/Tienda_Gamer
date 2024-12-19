@@ -527,7 +527,6 @@ function producto(prod, clase, links, showProductStart = 0, cant = 3) {
     const precio = [];
     const cuotas = [];
     const boton = [];
-    console.log(prod.length, showProductStart + cant)
     if (prod.length - showProductStart < cant) {
         cant = prod.length - showProductStart;
     }
@@ -560,8 +559,8 @@ producto(prod, ".productos-main", "carrito.html", 0, 8);
 producto(prod, ".productos-secundario", "carrito.html", 8, 8);
 
 
+/* -------------------------------------------------------------------------------------- */
 // funciones para carrito.html
-
 
 function obtenerIdBtn(event) {
     const btnId = event.target.id;
@@ -606,63 +605,67 @@ function crearPagVenta(prod, id) {
     const relacionados = createH3("Productos Relacionados")
     const div = createDiv("carrito-cards-relacionados")
     const ol = createOl()
-
-    // modificamos la ruta de navegacion
-
     const tipo = document.getElementById("ruta-tipo")
     const especifico = document.getElementById("ruta-especifico")
 
-    tipo.textContent = producto.categoria[0];
-    especifico.textContent = producto.categoria[1];
+    // como estamos cargando el script para todas las paginas, nos aseguramos que estamos en la pag 
+    // correcta verificando que exista alguno de sus id-clases, y luego ejecutamos el codigo
+    if (tipo) {
+        // ruta / ruta / ruta
+        tipo.innerText = producto.categoria[0]
+        especifico.innerText = producto.categoria[1];
 
-    // imagenes de la izquierda
-    for (let i = 0; i < producto.img.length; i++) {
-        li[i] = createLi();
-        img[i] = createImg2(producto.img[i], producto.alt, "");
-        li[i].appendChild(img[i]);
-        ol_imgIzq.appendChild(li[i]);
+        // imagenes de la izquierda
+        for (let i = 0; i < producto.img.length; i++) {
+            li[i] = createLi();
+            img[i] = createImg2(producto.img[i], producto.alt, "");
+            li[i].appendChild(img[i]);
+            ol_imgIzq.appendChild(li[i]);
+        }
+
+        // imagen principal
+        imgMain.appendChild(createImg2(producto.img[0]))
+
+
+        // nombre precio y caracteristicas prod
+        titulo.textContent = producto.nombre
+        precio.textContent = "$" + producto.precio[0]
+        if (producto.precio[1] != 0) {
+            original.textContent = "$" + producto.precio[1]
+        }
+        descripcion.textContent = producto.descripcion // debemos crear ul>li
+        disponibles.textContent = producto.disponibles + " disponibles"
+
+
+
+        // hacemos toda la parte de abajo
+        descripcion_larga.appendChild(hr)
+        descripcion_larga.appendChild(h3)
+
+        for (let i = 0; i < producto.descripcion_larga.length; i++) {
+            p[i] = createP(producto.descripcion_larga[i])
+            descripcion_larga.appendChild(p[i])
+        }
+        descripcion_larga.appendChild(hr)
+        descripcion_larga.appendChild(relacionados)
+
+        // agregamos productos relacionados
+        for (let i = 0; i < 9; i++) {
+            li[i] = createLi();
+            img[i] = createImg2("1SYwihoqHLVBbsedRXO_FiCkDlzXR0x8m", "carrito-relacionado", "");
+            li[i].appendChild(img[i]);
+            ol.appendChild(li[i]);
+        }
+        div.appendChild(ol)
+        descripcion_larga.appendChild(div)
     }
 
-    // imagen principal
-    imgMain.appendChild(createImg2(producto.img[0]))
 
 
-    // nombre precio y caracteristicas prod
-    titulo.textContent = producto.nombre
-    precio.textContent = "$" + producto.precio[0]
-    if (producto.precio[1] != 0) {
-        original.textContent = "$" + producto.precio[1]
-    }
-    descripcion.textContent = producto.descripcion // debemos crear ul>li
-    disponibles.textContent = producto.disponibles + " disponibles"
-
-
-
-    // hacemos toda la parte de abajo
-    descripcion_larga.appendChild(hr)
-    descripcion_larga.appendChild(h3)
-
-    for (let i = 0; i < producto.descripcion_larga.length; i++) {
-        p[i] = createP(producto.descripcion_larga[i])
-        descripcion_larga.appendChild(p[i])
-    }
-    descripcion_larga.appendChild(hr)
-    descripcion_larga.appendChild(relacionados)
-
-    // agregamos productos relacionados
-    for (let i = 0; i < 9; i++) {
-        li[i] = createLi();
-        img[i] = createImg2("1SYwihoqHLVBbsedRXO_FiCkDlzXR0x8m", "carrito-relacionado", "");
-        li[i].appendChild(img[i]);
-        ol.appendChild(li[i]);
-    }
-    div.appendChild(ol)
-    descripcion_larga.appendChild(div)
 
 }
 
 
 // dibujamos la pagina
-
-crearPagVenta(prod, btnId);
+document.addEventListener('DOMContentLoaded', crearPagVenta(prod, btnId));
 
