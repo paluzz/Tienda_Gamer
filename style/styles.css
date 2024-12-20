@@ -272,6 +272,8 @@ body>header {
     font-size: 1rem;
     max-height: 50px;
     margin-bottom: 5px;
+    padding: 10px 0 0 0;
+    height: 60px;
 }
 
 .productos-descuento {
@@ -321,6 +323,7 @@ body>header {
     display: inline-block;
     border: none;
     outline: none;
+    font-size: 14px;
     margin-top: 10px;
     padding: 10px 20px;
     border-radius: 0.5rem;
@@ -415,6 +418,30 @@ body>header {
 }
 
 
+
+
+/*---------------------------------------------------------------------------------------------------------*/
+/* RESEÑAS */
+.reseñas-title {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+.reseñas-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px 10vw 50px;
+    gap: 30px;
+    background-color: #eee;
+}
+
+.reseñas-list li {
+    background-color: #ddd;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
 
 
 /*---------------------------------------------------------------------------------------------------------*/
@@ -614,6 +641,11 @@ footer {
     .map-iframe {
         width: 90vw;
         margin-bottom: 5vh;
+    }
+
+    /* RESEÑAS */
+    .reseñas-list {
+        grid-template-columns: 1fr;
     }
 
     /* FOOTER */

@@ -483,15 +483,15 @@ function createPrice(precio, oferta, desc) {
 
     return div;
 }
-function createBtn(identif, href) {
+function createBtn(identif, href, clase, content) {
 
     const a = document.createElement("a");
     const btn = document.createElement("button");
 
     a.href = href;
     a.className = "link-comprar";
-    btn.className = "productos-boton";
-    btn.textContent = "Comprar";
+    btn.className = clase;
+    btn.textContent = content;
     btn.id = identif;
 
     a.appendChild(btn);
@@ -527,6 +527,7 @@ function producto(prod, clase, links, showProductStart = 0, cant = 3) {
     const precio = [];
     const cuotas = [];
     const boton = [];
+    const carrito = [];
     if (prod.length - showProductStart < cant) {
         cant = prod.length - showProductStart;
     }
@@ -537,13 +538,15 @@ function producto(prod, clase, links, showProductStart = 0, cant = 3) {
             h4[i] = createName(prod[k].nombre, links);
             precio[i] = createPrice(prod[k].precio[0], prod[k].precio[1], prod[k].precio[2]);
             cuotas[i] = createCuotas(prod[k].precio[1], prod[k].precio[0]);
-            boton[i] = createBtn(prod[k].id, links);
+            boton[i] = createBtn(prod[k].id, links, "productos-boton", "Detalles >>");
+            carrito[i] = createBtn(prod[k].id, "", "productos-btn", "AgregarCarrito");
             li[i] = createLi("productos-card");
             li[i].appendChild(img[i]);
             li[i].appendChild(h4[i]);
             li[i].appendChild(precio[i]);
             li[i].appendChild(cuotas[i]);
             li[i].appendChild(boton[i]);
+            li[i].appendChild(carrito[i]);
             fragment.appendChild(li[i]);
         }
         ol[j].appendChild(fragment);
@@ -665,7 +668,8 @@ function crearPagVenta(prod, id) {
 
 }
 
-
 // dibujamos la pagina
 document.addEventListener('DOMContentLoaded', crearPagVenta(prod, btnId));
+
+// creamos el carrito 
 
