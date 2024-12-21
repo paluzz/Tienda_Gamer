@@ -501,17 +501,13 @@ function createCuotas(oferta, original) {
     const h5 = document.createElement("h5")
     h5.className = "productos-cuotas";
 
-    for (let i = 0; i < original.length; i++) {
-        oferta = oferta.replace(".", '')
-        original = original.replace(".", '')
-    }
-    const conDesc = parseInt(oferta)
-    const sinDesc = parseInt(original)
+    const conDesc = convertirPrecio(oferta)
+    const sinDesc = convertirPrecio(original)
     if (conDesc != 0) {
-        h5.textContent = "Mismo precio en 12 cuotas de $" + conDesc / 10;
+        h5.textContent = "Mismo precio en 12 cuotas de $" + formatearPrecio(conDesc / 10);
     }
     else {
-        h5.textContent = "mismo precio en 12 cuotas de $" + sinDesc / 10;
+        h5.textContent = "mismo precio en 12 cuotas de $" + formatearPrecio(sinDesc / 10);
     }
 
     return h5;
@@ -552,7 +548,7 @@ function producto(prod, clase, links, showProductStart = 0, cant = 3) {
             precio[i] = createPrice(prod[k].precio[0], prod[k].precio[1], prod[k].precio[2]);
             cuotas[i] = createCuotas(prod[k].precio[1], prod[k].precio[0]);
             boton[i] = createBtn(prod[k].id, links, "productos-boton", "Detalles >>");
-            carrito[i] = createBtn(prod[k].id, "#", "productos-btn", "AgregarCarrito");
+            carrito[i] = createBtn(prod[k].id, "javascript:void(0)", "productos-btn", "AgregarCarrito");
             li[i] = createLi("productos-card");
             li[i].appendChild(img[i]);
             li[i].appendChild(h4[i]);
@@ -575,6 +571,7 @@ producto(prod, ".productos-main", "carrito.html", 0, 8);
 producto(prod, ".productos-secundario", "carrito.html", 8, 8);
 
 
+
 /* -------------------------------------------------------------------------------------- */
 // creamos la pagina de mas detalles (carrito.html)
 
@@ -590,13 +587,11 @@ boton.forEach(boton => {
 }, false);
 
 
-
-// PAGINA DE VENTA
 // Capturamos el Id en otra pagina
 const btnId = localStorage.getItem('btnCompra')
 
 
-// RELLENAMOS LOS DATOS EN LA PAGINA DE VENTA
+// creamos todos los elementos de la pagina  de mas detalles
 function crearPagVenta(prod, id) {
     let producto;
     for (let i = 0; i < prod.length; i++) {
