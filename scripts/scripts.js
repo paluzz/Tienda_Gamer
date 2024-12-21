@@ -552,7 +552,7 @@ function producto(prod, clase, links, showProductStart = 0, cant = 3) {
             precio[i] = createPrice(prod[k].precio[0], prod[k].precio[1], prod[k].precio[2]);
             cuotas[i] = createCuotas(prod[k].precio[1], prod[k].precio[0]);
             boton[i] = createBtn(prod[k].id, links, "productos-boton", "Detalles >>");
-            carrito[i] = createBtn(prod[k].id, "#Carrito-container", "productos-btn", "AgregarCarrito");
+            carrito[i] = createBtn(prod[k].id, "#", "productos-btn", "AgregarCarrito");
             li[i] = createLi("productos-card");
             li[i].appendChild(img[i]);
             li[i].appendChild(h4[i]);
@@ -719,13 +719,17 @@ for (let j = 0; j < agregarBtn.length; j++) {
                 </a>
                 <div>
                     <h4>${prod[j].nombre}</h4>
-                    <h4 class="carrito-precio">Precio: $ 
-                    <p>${prod[j].precio[0]}</p>
+                    <h4 class="carrito-precio">
+                        Precio: $ 
+                        <p> ${prod[j].precio[0]} </p>
                     </h4>
                 </div>
             </div>
             <div class="quitar-producto">
-                <img src="${img + "1qiC6LkKohJPXYLR1buSpUlc8FYFJh5Wx"}" alt="borrar-producto">
+                <img 
+                    src="${img + "1qiC6LkKohJPXYLR1buSpUlc8FYFJh5Wx"}" 
+                    alt="borrar-producto"
+                >
             </div>
         `;
         li.className = "cards-carrito";

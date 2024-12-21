@@ -439,6 +439,12 @@ body>header {
     justify-content: flex-end;
 }
 
+.carrito-precio {
+    display: flex;
+    flex-direction: row;
+}
+
+
 .carrito-footer {
     display: flex;
     flex-direction: column;
