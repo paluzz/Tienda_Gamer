@@ -516,8 +516,21 @@ function createCuotas(oferta, original) {
 
     return h5;
 }
+// funciones para manejar numeros
+function formatearPrecio(precio) {
+    // 'es-ES' para formato español  devuelve el numero con puntos
+    return precio.toLocaleString('es-ES');
+}
+function convertirPrecio(precioStr) {
+    // Eliminar los puntos del string 
+    const precioSinPuntos = precioStr.replace(/\./g, '');
+    // Convertir el string a número 
+    const precioNumero = parseInt(precioSinPuntos, 10);
+    return precioNumero;
+}
 
-// funcion para crear los ol>li
+
+// funcion para crear las cards de los productos
 function producto(prod, clase, links, showProductStart = 0, cant = 3) {
     const ol = document.querySelectorAll(clase);
     const fragment = document.createDocumentFragment(); // Crear un fragmento de documento para agregar los elementos
@@ -539,7 +552,7 @@ function producto(prod, clase, links, showProductStart = 0, cant = 3) {
             precio[i] = createPrice(prod[k].precio[0], prod[k].precio[1], prod[k].precio[2]);
             cuotas[i] = createCuotas(prod[k].precio[1], prod[k].precio[0]);
             boton[i] = createBtn(prod[k].id, links, "productos-boton", "Detalles >>");
-            carrito[i] = createBtn(prod[k].id, "", "productos-btn", "AgregarCarrito");
+            carrito[i] = createBtn(prod[k].id, "#Carrito-container", "productos-btn", "AgregarCarrito");
             li[i] = createLi("productos-card");
             li[i].appendChild(img[i]);
             li[i].appendChild(h4[i]);
@@ -563,7 +576,7 @@ producto(prod, ".productos-secundario", "carrito.html", 8, 8);
 
 
 /* -------------------------------------------------------------------------------------- */
-// funciones para carrito.html
+// creamos la pagina de mas detalles (carrito.html)
 
 function obtenerIdBtn(event) {
     const btnId = event.target.id;
@@ -667,9 +680,88 @@ function crearPagVenta(prod, id) {
 
 
 }
-
-// dibujamos la pagina
+// dibujamos la pagina de mas detalles
 document.addEventListener('DOMContentLoaded', crearPagVenta(prod, btnId));
 
-// creamos el carrito 
 
+/*---------------------------------------------------------------------------------- */
+/*creamos el carrito*/
+
+const img = "https://lh3.googleusercontent.com/d/";
+const agregarBtn = document.querySelectorAll(".productos-btn");
+const carritoUl = document.querySelector(".carrito-lista-productos");
+const cerrarBtn = document.querySelector(".cerrar");
+const vaciarCarrito = document.querySelector("#carrito-btn-vaciar");
+const totalCarrito = document.querySelector(".carrito-total");
+let total = 0;
+
+// cerrar el carrito
+cerrarBtn.addEventListener("click", () => {
+    const cerrar = document.querySelector(".Carrito-container");
+    cerrar.className = "Carrito-container oculto";
+});
+
+// abrir el carrito
+function abrirCarrito() {
+    const abrir = document.querySelector(".Carrito-container");
+    abrir.className = "Carrito-container";
+}
+
+// agregar producto al carrito
+for (let j = 0; j < agregarBtn.length; j++) {
+    function agregarCarrito() {
+        const li = document.createElement("li");
+
+        li.innerHTML = `
+            <div class="cards-carrito-producto">
+                <a href="pages/carrito.html">
+                    <img class="cards-carrito-img" src="${img + prod[j].img[0]}" alt="${prod[j].alt}">
+                </a>
+                <div>
+                    <h4>${prod[j].nombre}</h4>
+                    <h4 class="carrito-precio">Precio: $ 
+                    <p>${prod[j].precio[0]}</p>
+                    </h4>
+                </div>
+            </div>
+            <div class="quitar-producto">
+                <img src="${img + "1qiC6LkKohJPXYLR1buSpUlc8FYFJh5Wx"}" alt="borrar-producto">
+            </div>
+        `;
+        li.className = "cards-carrito";
+        carritoUl.appendChild(li);
+
+        total += convertirPrecio(prod[j].precio[0]);
+        totalCarrito.innerHTML = `Total a Pagar: $ ${formatearPrecio(total)}`;
+        abrirCarrito();
+
+        // eliminar producto
+        const quitarProducto = li.querySelector(".quitar-producto");
+        quitarProducto.addEventListener("click", () => eliminarProducto(li, prod[j].precio[0]));
+    }
+
+    agregarBtn[j].addEventListener("click", agregarCarrito);
+}
+
+// eliminar producto del carrito
+function eliminarProducto(li, precio) {
+    total -= convertirPrecio(precio);
+    totalCarrito.innerHTML = `Total a Pagar: $ ${formatearPrecio(total)}`;
+    li.remove();
+}
+
+
+// vaciar carrito
+function borrarTodo() {
+    carritoUl.innerHTML = "";
+    total = 0;
+    totalCarrito.innerHTML = `Total a Pagar: $ 0`;
+}
+
+vaciarCarrito.addEventListener("click", borrarTodo);
+
+
+
+// le damos funcionalidad al boton de carrito del header
+const carritoBtn = document.querySelector(".abrir-carrito");
+carritoBtn.addEventListener("click", abrirCarrito);

@@ -211,6 +211,11 @@ textarea {
     cursor: pointer;
 }
 
+.error {
+    color: red;
+    display: none;
+}
+
 @media (hover:hover) {
 
     .enviar:hover {

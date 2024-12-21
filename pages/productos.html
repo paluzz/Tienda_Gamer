@@ -50,7 +50,7 @@
                 </div>
             </a>
             <!-- CARRITO SIMBOLO -->
-            <a href="carrito.html">
+            <a class="abrir-carrito" href="#Carrito-container">
                 <i class="carro-2xl fa-solid fa-cart-shopping fa-2xl"></i>
                 <i class="carro-mob fa-solid fa-cart-shopping"></i>
             </a>
@@ -63,6 +63,27 @@
         </div>
         <!--BARRA NAVEGACION PC-->
         <nav>
+            <!-- CARRITO -->
+            <div id="Carrito-container">
+                <div class="Carrito-container oculto">
+                    <div class="carrito-header">
+                        <h4 class="carrito-title">Carrito de compras </h4>
+                        <div class="cerrar">
+                            <input class="cerrar-btn" type="button" value="x">
+                        </div>
+                    </div>
+                    <hr>
+                    <ul class="carrito-lista-productos">
+                    </ul>
+                    <div class="carrito-footer">
+                        <h4 class="carrito-total">Total a Pagar: $0</h4>
+                        <div class="botones">
+                            <button id="carrito-btn-comprar" class="productos-btn-compra">Comprar</button>
+                            <button id="carrito-btn-vaciar" class="productos-btn-compra">Vaciar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="ir_arriba_fixed">
                 <a href="../index.html">
                     <img src="../img/icons/inicio.png" alt="ir arriba">
